@@ -23,7 +23,6 @@
 		8BD8303E292D79CF00799DA9 /* Violão.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83037292D79CF00799DA9 /* Violão.mp3 */; };
 		8BD8303F292D79CF00799DA9 /* Flauta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83038292D79CF00799DA9 /* Flauta.mp3 */; };
 		8BD83040292D79CF00799DA9 /* countdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83039292D79CF00799DA9 /* countdown.mp3 */; };
-		8BD83043292D7A1700799DA9 /* RubikBubbles-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83042292D7A1700799DA9 /* RubikBubbles-Regular.ttf */; };
 		8BD83048292D7A3400799DA9 /* Barata.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83045292D7A3400799DA9 /* Barata.mp3 */; };
 		8BD83049292D7A3400799DA9 /* Aranha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83046292D7A3400799DA9 /* Aranha.mp3 */; };
 		8BD8304A292D7A3400799DA9 /* Borboleta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83047292D7A3400799DA9 /* Borboleta.mp3 */; };
@@ -75,6 +74,7 @@
 		8BD830AA292D7D9E00799DA9 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD830A8292D7D9E00799DA9 /* Counter.swift */; };
 		8BD830AC292D7DB600799DA9 /* WatchConnecivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD830AB292D7DB600799DA9 /* WatchConnecivity.swift */; };
 		8BD830AD292D7DB600799DA9 /* WatchConnecivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD830AB292D7DB600799DA9 /* WatchConnecivity.swift */; };
+		9CC09645292D8A5F00DCCCE1 /* RubikBubbles-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CC09644292D8A5F00DCCCE1 /* RubikBubbles-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,7 +119,6 @@
 		8BD83037292D79CF00799DA9 /* Violão.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Violão.mp3"; sourceTree = "<group>"; };
 		8BD83038292D79CF00799DA9 /* Flauta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Flauta.mp3; sourceTree = "<group>"; };
 		8BD83039292D79CF00799DA9 /* countdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = countdown.mp3; sourceTree = "<group>"; };
-		8BD83042292D7A1700799DA9 /* RubikBubbles-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RubikBubbles-Regular.ttf"; sourceTree = "<group>"; };
 		8BD83045292D7A3400799DA9 /* Barata.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Barata.mp3; sourceTree = "<group>"; };
 		8BD83046292D7A3400799DA9 /* Aranha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Aranha.mp3; sourceTree = "<group>"; };
 		8BD83047292D7A3400799DA9 /* Borboleta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Borboleta.mp3; sourceTree = "<group>"; };
@@ -162,6 +161,8 @@
 		8BD8308D292D7D0200799DA9 /* Barata-Piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Barata-Piano.mp3"; sourceTree = "<group>"; };
 		8BD830A8292D7D9E00799DA9 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		8BD830AB292D7DB600799DA9 /* WatchConnecivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnecivity.swift; sourceTree = "<group>"; };
+		9CC09640292D899A00DCCCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9CC09644292D8A5F00DCCCE1 /* RubikBubbles-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RubikBubbles-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,11 +205,12 @@
 		8BD83008292D795B00799DA9 /* Orkhestra */ = {
 			isa = PBXGroup;
 			children = (
+				9CC09643292D8A0500DCCCE1 /* Fonts */,
+				9CC09640292D899A00DCCCE1 /* Info.plist */,
 				8BD8305D292D7AE000799DA9 /* ViewModels */,
 				8BD83050292D7A7100799DA9 /* Views */,
 				8BD8304B292D7A3E00799DA9 /* Models */,
 				8BD83044292D7A2700799DA9 /* Music */,
-				8BD83041292D7A0100799DA9 /* Fonts */,
 				8BD83032292D79B300799DA9 /* Sounds */,
 				8BD8302D292D797F00799DA9 /* Tools */,
 				8BD83009292D795B00799DA9 /* OrkhestraApp.swift */,
@@ -270,14 +272,6 @@
 				8BD83037292D79CF00799DA9 /* Violão.mp3 */,
 			);
 			path = Sounds;
-			sourceTree = "<group>";
-		};
-		8BD83041292D7A0100799DA9 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				8BD83042292D7A1700799DA9 /* RubikBubbles-Regular.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		8BD83044292D7A2700799DA9 /* Music */ = {
@@ -408,6 +402,14 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		9CC09643292D8A0500DCCCE1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9CC09644292D8A5F00DCCCE1 /* RubikBubbles-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -493,9 +495,9 @@
 				8BD8303E292D79CF00799DA9 /* Violão.mp3 in Resources */,
 				8BD83011292D795C00799DA9 /* Preview Assets.xcassets in Resources */,
 				8BD83049292D7A3400799DA9 /* Aranha.mp3 in Resources */,
-				8BD83043292D7A1700799DA9 /* RubikBubbles-Regular.ttf in Resources */,
 				8BD8303A292D79CF00799DA9 /* Chocalho.mp3 in Resources */,
 				8BD8303D292D79CF00799DA9 /* Sax.mp3 in Resources */,
+				9CC09645292D8A5F00DCCCE1 /* RubikBubbles-Regular.ttf in Resources */,
 				8BD8303F292D79CF00799DA9 /* Flauta.mp3 in Resources */,
 				8BD8304A292D7A3400799DA9 /* Borboleta.mp3 in Resources */,
 				8BD8300E292D795C00799DA9 /* Assets.xcassets in Resources */,
@@ -776,6 +778,7 @@
 				DEVELOPMENT_TEAM = FJ6C8YTY7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Orkhestra/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Orkhestra;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -809,6 +812,7 @@
 				DEVELOPMENT_TEAM = FJ6C8YTY7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Orkhestra/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Orkhestra;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
