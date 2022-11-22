@@ -19,17 +19,27 @@ struct ChallengeWatchView: View {
     @State private var pitch = Double.zero
     @State private var yaw = Double.zero
     @State private var roll = Double.zero
+    @EnvironmentObject var audioManager: AudioManagerWatch
 
     var body: some View {
+//        let currentInstrument = historyList[hvm.historyId]
+//                                    .lisfOfInstruments
+//                                    .first(where: {
+//                                        $0.id == hvm.instrumentId
+//                                    })
+        let currentInstrument = historyList[hvm.historyId]
+            .lisfOfInstruments[hvm.instrumentId]
+
         NavigationView {
-            
             VStack {
                 Spacer()
 
                 ZStack {
-                    NavigationLink(destination: PlayOrkhestraView(),isActive: $victory) {}
-                    CircularProgressView(progress: progress)
-                    Image(instrumentsList[hvm.instrumentId].image)
+                    NavigationLink(destination: PlayOrkhestraView(), isActive: $victory) {}
+
+                    CircularProgressView(progress: progress, strokeLine: 7)
+
+                    Image(currentInstrument.image)
                         .resizable()
                         .frame(width: 55, height: 55)
                 }
@@ -37,7 +47,7 @@ struct ChallengeWatchView: View {
 
                 Spacer()
 
-                Text("Gire o Pulso")
+                Text(currentInstrument.challenge)
                     .font(.system(size: 20))
 
               
@@ -56,16 +66,14 @@ struct ChallengeWatchView: View {
 
                     if attitude.pitch <= -1 && estado == true && control == true {
                         estado = false
-                        playSound(sound: instrumentsList[hvm.instrumentId].name, type: "mp3")
+                        audioManager.playSound(sound: currentInstrument.name)
                         progress += 1/10
 
                     }
                     
                     if(progress >= 0.9){
-                        print("AAAAAA")
                         victory = true
                         control = false
-//                        print(victory)
                     }
                     
                     print("pitch: \(attitude.pitch)")
@@ -85,9 +93,7 @@ struct ChallengeWatchView: View {
                 control = false
             }
         }
-        .navigationBarTitle(instrumentsList[hvm.instrumentId].name)
-        
-        
+        .navigationBarTitle(currentInstrument.name)
     }
     
     

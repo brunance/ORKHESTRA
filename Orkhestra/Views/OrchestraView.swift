@@ -70,7 +70,16 @@ struct OrchestraView: View {
                         .accentColor(Color("Destaque1"))
                         .tint(Color("Destaque1"))
 
-                                                .font(.system(size: 12))
+                        HStack {
+                            // swiftlint:disable:next line_length
+                            Text(DateComponentsFormatter.positional.string(from: (audioManager.player?.currentTime ?? 0)) ?? "0:00")
+
+                            Spacer()
+
+                            // swiftlint:disable:next line_length
+                            Text(DateComponentsFormatter.positional.string(from: (audioManager.player?.duration ?? 0)) ?? "0:00")
+                        }
+                        .font(.system(size: 12))
                         .foregroundColor(Color("TitleOrchestra"))
                     }
                     VStack {

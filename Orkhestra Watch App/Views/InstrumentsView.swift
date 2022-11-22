@@ -7,36 +7,48 @@
 import SwiftUI
 
 struct InstrumentsView: View {
-    @StateObject var counter = Counter()
+
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
 
+    @StateObject var counter = Counter()
+    
     var body: some View {
+        let instruments = historyList[hvm.historyId].lisfOfInstruments
         NavigationView {
             VStack {
                 List {
-                    ForEach(instrumentsList, id: \.self) { instrument in
+                    ForEach(instruments, id: \.self) { instrument in
                         VStack(alignment: .center, spacing: 5) {
+                            Text("Escolha!")
+//                                .padding(.top, 5)
+//                                .multilineTextAlignment(.center)
+//                                .lineLimit(nil)
+                                .font(.system(size: 12))
+//                                .frame(maxWidth: .infinity, maxHeight: 90, alignment: .center)
+                            
                             Image(instrument.image)
                                 .resizable()
                                 .frame(width: 35, height: 35)
                                 .padding(.top, 5)
-                            Text(instrument.name)
-                                .bold()
-                                .padding(.top, 5)
-                                .font(.system(size: 12))
+
                             Button(action: {
                                 hvm.instrumentId = instrument.id
+                                
+                                counter.increment()
+                                print(counter.count)
                                 counter.increment()
                                 print(counter.count)
                             }, label: {})
-                            NavigationLink(destination: ChallengeWatchView()) {
-                                Text("**ESCOLHER**")
-                                    .font(.system(size: 14))
 
+                            NavigationLink(destination: ChallengeWatchView()) {
+                                Text(instrument.name)
+                                    .font(.system(size: 14))
+                                    .bold()
                             }
-                            .foregroundColor(.red).padding(.bottom, 5)
+                            .foregroundColor(Color("Destaque1"))
+//                            .padding(.bottom, 5)
                         }
-                        .frame(maxWidth: .infinity, maxHeight: 80, alignment: .center)
+                        .frame(maxWidth: .infinity, maxHeight: 85, alignment: .center)
                         .padding()
                     }
                 }

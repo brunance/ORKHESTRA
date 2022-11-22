@@ -12,8 +12,9 @@ struct HistoryView: View {
     @State private var showingCountDown = false
     @State var isGameView = true
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
+    
     @StateObject var counter = Counter()
-  
+
     let columns = [
         GridItem(.flexible())
     ]
@@ -27,7 +28,6 @@ struct HistoryView: View {
                     TabView {
                         ForEach(historyList, id: \.self) { item in
                             ZStack {
-                                
                                 Color("Primaria1")
                                 Image("\(item.name)Padrao")
                                     .resizable()
@@ -41,7 +41,9 @@ struct HistoryView: View {
                                     Button(action: {
                                         showingSheet.toggle()
                                         hvm.historyId = item.id
+                                        
                                         print(counter.count)
+                                        
                                     }, label: {
 
                                         ZStack {
@@ -54,23 +56,26 @@ struct HistoryView: View {
                                                 .foregroundStyle(Color("LightQuestion"))
                                         }
                                     })
-                                    
+                                    .sheet(isPresented: $showingSheet) {
+                                        SheetView()
+                                    }
                                 }
                                 .padding(.init(top: 77, leading: 331, bottom: 724, trailing: 16))
 
                                 VStack {
                                     ForEach(0...item.titleList.count - 1, id: \.self) { num in
-
                                         Text(item.titleList[num])
                                             // swiftlint:disable:next line_length
                                             .font(.custom("RubikBubbles-Regular", size: CGFloat(item.sizeTitleList[num])))
                                             .foregroundColor(Color("TitleHistory"))
                                     }
-
                                 }
                                 .padding(.init(top: 440, leading: 30, bottom: 200, trailing: 30))
                                 VStack {
-                                    Text("\(counter.count)")
+                                    Text("30s | Música, Instrumental")
+                                        .font(.system(size: 12))
+                                        .foregroundColor(Color("TitleHistory"))
+                                    Text("COUNTER:: \(counter.count)")
                                         .font(.system(size: 12))
                                         .foregroundColor(Color("TitleHistory"))
                                 }

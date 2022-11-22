@@ -2,16 +2,18 @@
 //  OrkhestraApp.swift
 //  Orkhestra Watch App
 //
-//  Created by Ruan Eleutério  on 22/11/22.
+//  Created by Anna Alicia Milani on 22/11/22.
 //
 
 import SwiftUI
 
 @main
-struct Orkhestra_Watch_AppApp: App {
+struct OrkhestraWatchApp: App {
+    @StateObject var audioManager = AudioManagerWatch()
     var body: some Scene {
         WindowGroup {
             MenuViewWatchApp()
+                .environmentObject(audioManager)
         }
     }
 }

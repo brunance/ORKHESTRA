@@ -94,6 +94,8 @@ struct GameView: View {
                         HStack {
                             if matchedCards.count > 0 {
                                 Text(matchedCards[matchedCards.count-1].text)
+                                    .font(.system(size: 16))
+                                    .foregroundColor(Color("TitleHistory"))
                                 Spacer()
                             }
                             Text("\(matchedCards.count/2)/\(cardValues.count)")

@@ -13,7 +13,6 @@ struct MenuViewWatchApp: View {
     var body: some View {
         NavigationStack {
             VStack {
-
                 Text("Minhas Histórias")
                     .padding(.top, 10)
                     .font(.system(size: 16))
