@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "SilhuetaSaxfoneLightMode.svg",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "SilhuetaSaxfoneDarkMode.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

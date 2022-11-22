@@ -1,0 +1,1081 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CF2FA78292D184500643C3C /* OrkhestraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FA77292D184500643C3C /* OrkhestraApp.swift */; };
+		9CF2FA7A292D184500643C3C /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FA79292D184500643C3C /* HistoryView.swift */; };
+		9CF2FA7C292D184600643C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF2FA7B292D184600643C3C /* Assets.xcassets */; };
+		9CF2FA7F292D184600643C3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF2FA7E292D184600643C3C /* Preview Assets.xcassets */; };
+		9CF2FA9B292D184600643C3C /* Orkhestra Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9CF2FA9A292D184600643C3C /* Orkhestra Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9CF2FAA0292D184600643C3C /* OrkhestraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FA9F292D184600643C3C /* OrkhestraApp.swift */; };
+		9CF2FAA2292D184600643C3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAA1292D184600643C3C /* ContentView.swift */; };
+		9CF2FAA4292D184700643C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF2FAA3292D184700643C3C /* Assets.xcassets */; };
+		9CF2FAA7292D184700643C3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF2FAA6292D184700643C3C /* Preview Assets.xcassets */; };
+		9CF2FAD5292D191400643C3C /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAD4292D191400643C3C /* Counter.swift */; };
+		9CF2FAD6292D191400643C3C /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAD4292D191400643C3C /* Counter.swift */; };
+		9CF2FAD8292D195200643C3C /* WatchConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAD7292D195200643C3C /* WatchConnectivity.swift */; };
+		9CF2FAD9292D195200643C3C /* WatchConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAD7292D195200643C3C /* WatchConnectivity.swift */; };
+		9CF2FADB292D19AB00643C3C /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FADA292D19AB00643C3C /* HistoryViewModel.swift */; };
+		9CF2FADD292D19C500643C3C /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FADC292D19C500643C3C /* HistoryModel.swift */; };
+		9CF2FADF292D1A2D00643C3C /* InstrumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FADE292D1A2D00643C3C /* InstrumentModel.swift */; };
+		9CF2FAE1292D1A4700643C3C /* HIstoryModelWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAE0292D1A4700643C3C /* HIstoryModelWatch.swift */; };
+		9CF2FAE3292D1A6A00643C3C /* MenuViewWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAE2292D1A6A00643C3C /* MenuViewWatchApp.swift */; };
+		9CF2FAE5292D1A8E00643C3C /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAE4292D1A8E00643C3C /* HistoryViewModel.swift */; };
+		9CF2FAE7292D1AB300643C3C /* InstrumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAE6292D1AB300643C3C /* InstrumentsView.swift */; };
+		9CF2FAE9292D1AD400643C3C /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAE8292D1AD400643C3C /* CircularProgressView.swift */; };
+		9CF2FAEB292D1AF600643C3C /* ChallengeWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAEA292D1AF600643C3C /* ChallengeWatchView.swift */; };
+		9CF2FAED292D1B1300643C3C /* PlayOrkhestraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAEC292D1B1300643C3C /* PlayOrkhestraView.swift */; };
+		9CF2FAEF292D1B6E00643C3C /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAEE292D1B6E00643C3C /* AudioModel.swift */; };
+		9CF2FAF1292D1B9900643C3C /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAF0292D1B9900643C3C /* CardModel.swift */; };
+		9CF2FAF3292D1BAF00643C3C /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAF2292D1BAF00643C3C /* AudioManager.swift */; };
+		9CF2FAF5292D1BDD00643C3C /* ContDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAF4292D1BDD00643C3C /* ContDownView.swift */; };
+		9CF2FAF7292D1C0C00643C3C /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAF6292D1C0C00643C3C /* GameView.swift */; };
+		9CF2FAF9292D1C2600643C3C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAF8292D1C2600643C3C /* CardView.swift */; };
+		9CF2FAFB292D1C3F00643C3C /* OrkhestraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAFA292D1C3F00643C3C /* OrkhestraView.swift */; };
+		9CF2FAFD292D1C5600643C3C /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2FAFC292D1C5600643C3C /* GameViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CF2FA85292D184600643C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CF2FA6C292D184500643C3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CF2FA73292D184500643C3C;
+			remoteInfo = Orkhestra;
+		};
+		9CF2FA8F292D184600643C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CF2FA6C292D184500643C3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CF2FA73292D184500643C3C;
+			remoteInfo = Orkhestra;
+		};
+		9CF2FA9C292D184600643C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CF2FA6C292D184500643C3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CF2FA99292D184600643C3C;
+			remoteInfo = "Orkhestra Watch App";
+		};
+		9CF2FAAD292D184700643C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CF2FA6C292D184500643C3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CF2FA99292D184600643C3C;
+			remoteInfo = "Orkhestra Watch App";
+		};
+		9CF2FAB7292D184700643C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CF2FA6C292D184500643C3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CF2FA99292D184600643C3C;
+			remoteInfo = "Orkhestra Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CF2FAC3292D184700643C3C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9CF2FA9B292D184600643C3C /* Orkhestra Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9CF2FA74292D184500643C3C /* Orkhestra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orkhestra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF2FA77292D184500643C3C /* OrkhestraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrkhestraApp.swift; sourceTree = "<group>"; };
+		9CF2FA79292D184500643C3C /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		9CF2FA7B292D184600643C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CF2FA7E292D184600643C3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9CF2FA84292D184600643C3C /* OrkhestraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrkhestraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF2FA8E292D184600643C3C /* OrkhestraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrkhestraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF2FA9A292D184600643C3C /* Orkhestra Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Orkhestra Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF2FA9F292D184600643C3C /* OrkhestraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrkhestraApp.swift; sourceTree = "<group>"; };
+		9CF2FAA1292D184600643C3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9CF2FAA3292D184700643C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CF2FAA6292D184700643C3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9CF2FAAC292D184700643C3C /* Orkhestra Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Orkhestra Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF2FAB6292D184700643C3C /* Orkhestra Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Orkhestra Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF2FAD4292D191400643C3C /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		9CF2FAD7292D195200643C3C /* WatchConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivity.swift; sourceTree = "<group>"; };
+		9CF2FADA292D19AB00643C3C /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		9CF2FADC292D19C500643C3C /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		9CF2FADE292D1A2D00643C3C /* InstrumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentModel.swift; sourceTree = "<group>"; };
+		9CF2FAE0292D1A4700643C3C /* HIstoryModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIstoryModelWatch.swift; sourceTree = "<group>"; };
+		9CF2FAE2292D1A6A00643C3C /* MenuViewWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewWatchApp.swift; sourceTree = "<group>"; };
+		9CF2FAE4292D1A8E00643C3C /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		9CF2FAE6292D1AB300643C3C /* InstrumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentsView.swift; sourceTree = "<group>"; };
+		9CF2FAE8292D1AD400643C3C /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		9CF2FAEA292D1AF600643C3C /* ChallengeWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeWatchView.swift; sourceTree = "<group>"; };
+		9CF2FAEC292D1B1300643C3C /* PlayOrkhestraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayOrkhestraView.swift; sourceTree = "<group>"; };
+		9CF2FAEE292D1B6E00643C3C /* AudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
+		9CF2FAF0292D1B9900643C3C /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		9CF2FAF2292D1BAF00643C3C /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		9CF2FAF4292D1BDD00643C3C /* ContDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContDownView.swift; sourceTree = "<group>"; };
+		9CF2FAF6292D1C0C00643C3C /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		9CF2FAF8292D1C2600643C3C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9CF2FAFA292D1C3F00643C3C /* OrkhestraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrkhestraView.swift; sourceTree = "<group>"; };
+		9CF2FAFC292D1C5600643C3C /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CF2FA71292D184500643C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FA81292D184600643C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FA8B292D184600643C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FA97292D184600643C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FAA9292D184700643C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FAB3292D184700643C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CF2FA6B292D184500643C3C = {
+			isa = PBXGroup;
+			children = (
+				9CF2FAD3292D18F900643C3C /* Shared */,
+				9CF2FA76292D184500643C3C /* Orkhestra */,
+				9CF2FA9E292D184600643C3C /* Orkhestra Watch App */,
+				9CF2FA75292D184500643C3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CF2FA75292D184500643C3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CF2FA74292D184500643C3C /* Orkhestra.app */,
+				9CF2FA84292D184600643C3C /* OrkhestraTests.xctest */,
+				9CF2FA8E292D184600643C3C /* OrkhestraUITests.xctest */,
+				9CF2FA9A292D184600643C3C /* Orkhestra Watch App.app */,
+				9CF2FAAC292D184700643C3C /* Orkhestra Watch AppTests.xctest */,
+				9CF2FAB6292D184700643C3C /* Orkhestra Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CF2FA76292D184500643C3C /* Orkhestra */ = {
+			isa = PBXGroup;
+			children = (
+				9CF2FAFE292D1C8300643C3C /* ViewModel */,
+				9CF2FAFF292D1C9F00643C3C /* Model */,
+				9CF2FB02292D1CD000643C3C /* View */,
+				9CF2FA77292D184500643C3C /* OrkhestraApp.swift */,
+				9CF2FA7B292D184600643C3C /* Assets.xcassets */,
+				9CF2FA7D292D184600643C3C /* Preview Content */,
+			);
+			path = Orkhestra;
+			sourceTree = "<group>";
+		};
+		9CF2FA7D292D184600643C3C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9CF2FA7E292D184600643C3C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9CF2FA9E292D184600643C3C /* Orkhestra Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				9CF2FA9F292D184600643C3C /* OrkhestraApp.swift */,
+				9CF2FADE292D1A2D00643C3C /* InstrumentModel.swift */,
+				9CF2FAEE292D1B6E00643C3C /* AudioModel.swift */,
+				9CF2FAE0292D1A4700643C3C /* HIstoryModelWatch.swift */,
+				9CF2FAA1292D184600643C3C /* ContentView.swift */,
+				9CF2FAEA292D1AF600643C3C /* ChallengeWatchView.swift */,
+				9CF2FAE8292D1AD400643C3C /* CircularProgressView.swift */,
+				9CF2FAE4292D1A8E00643C3C /* HistoryViewModel.swift */,
+				9CF2FAE6292D1AB300643C3C /* InstrumentsView.swift */,
+				9CF2FAE2292D1A6A00643C3C /* MenuViewWatchApp.swift */,
+				9CF2FAEC292D1B1300643C3C /* PlayOrkhestraView.swift */,
+				9CF2FAA3292D184700643C3C /* Assets.xcassets */,
+				9CF2FAA5292D184700643C3C /* Preview Content */,
+			);
+			path = "Orkhestra Watch App";
+			sourceTree = "<group>";
+		};
+		9CF2FAA5292D184700643C3C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9CF2FAA6292D184700643C3C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9CF2FAD3292D18F900643C3C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9CF2FAD4292D191400643C3C /* Counter.swift */,
+				9CF2FAD7292D195200643C3C /* WatchConnectivity.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		9CF2FAFE292D1C8300643C3C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9CF2FADA292D19AB00643C3C /* HistoryViewModel.swift */,
+				9CF2FAFC292D1C5600643C3C /* GameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9CF2FAFF292D1C9F00643C3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CF2FADC292D19C500643C3C /* HistoryModel.swift */,
+				9CF2FAF2292D1BAF00643C3C /* AudioManager.swift */,
+				9CF2FAF0292D1B9900643C3C /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CF2FB02292D1CD000643C3C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9CF2FA79292D184500643C3C /* HistoryView.swift */,
+				9CF2FAF6292D1C0C00643C3C /* GameView.swift */,
+				9CF2FAF8292D1C2600643C3C /* CardView.swift */,
+				9CF2FAFA292D1C3F00643C3C /* OrkhestraView.swift */,
+				9CF2FAF4292D1BDD00643C3C /* ContDownView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CF2FA73292D184500643C3C /* Orkhestra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF2FAC4292D184700643C3C /* Build configuration list for PBXNativeTarget "Orkhestra" */;
+			buildPhases = (
+				9CF2FA70292D184500643C3C /* Sources */,
+				9CF2FA71292D184500643C3C /* Frameworks */,
+				9CF2FA72292D184500643C3C /* Resources */,
+				9CF2FAC3292D184700643C3C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CF2FA9D292D184600643C3C /* PBXTargetDependency */,
+			);
+			name = Orkhestra;
+			productName = Orkhestra;
+			productReference = 9CF2FA74292D184500643C3C /* Orkhestra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CF2FA83292D184600643C3C /* OrkhestraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF2FAC7292D184700643C3C /* Build configuration list for PBXNativeTarget "OrkhestraTests" */;
+			buildPhases = (
+				9CF2FA80292D184600643C3C /* Sources */,
+				9CF2FA81292D184600643C3C /* Frameworks */,
+				9CF2FA82292D184600643C3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CF2FA86292D184600643C3C /* PBXTargetDependency */,
+			);
+			name = OrkhestraTests;
+			productName = OrkhestraTests;
+			productReference = 9CF2FA84292D184600643C3C /* OrkhestraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9CF2FA8D292D184600643C3C /* OrkhestraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF2FACA292D184700643C3C /* Build configuration list for PBXNativeTarget "OrkhestraUITests" */;
+			buildPhases = (
+				9CF2FA8A292D184600643C3C /* Sources */,
+				9CF2FA8B292D184600643C3C /* Frameworks */,
+				9CF2FA8C292D184600643C3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CF2FA90292D184600643C3C /* PBXTargetDependency */,
+			);
+			name = OrkhestraUITests;
+			productName = OrkhestraUITests;
+			productReference = 9CF2FA8E292D184600643C3C /* OrkhestraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9CF2FA99292D184600643C3C /* Orkhestra Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF2FAC0292D184700643C3C /* Build configuration list for PBXNativeTarget "Orkhestra Watch App" */;
+			buildPhases = (
+				9CF2FA96292D184600643C3C /* Sources */,
+				9CF2FA97292D184600643C3C /* Frameworks */,
+				9CF2FA98292D184600643C3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Orkhestra Watch App";
+			productName = "Orkhestra Watch App";
+			productReference = 9CF2FA9A292D184600643C3C /* Orkhestra Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CF2FAAB292D184700643C3C /* Orkhestra Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF2FACD292D184700643C3C /* Build configuration list for PBXNativeTarget "Orkhestra Watch AppTests" */;
+			buildPhases = (
+				9CF2FAA8292D184700643C3C /* Sources */,
+				9CF2FAA9292D184700643C3C /* Frameworks */,
+				9CF2FAAA292D184700643C3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CF2FAAE292D184700643C3C /* PBXTargetDependency */,
+			);
+			name = "Orkhestra Watch AppTests";
+			productName = "Orkhestra Watch AppTests";
+			productReference = 9CF2FAAC292D184700643C3C /* Orkhestra Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9CF2FAB5292D184700643C3C /* Orkhestra Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF2FAD0292D184700643C3C /* Build configuration list for PBXNativeTarget "Orkhestra Watch AppUITests" */;
+			buildPhases = (
+				9CF2FAB2292D184700643C3C /* Sources */,
+				9CF2FAB3292D184700643C3C /* Frameworks */,
+				9CF2FAB4292D184700643C3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CF2FAB8292D184700643C3C /* PBXTargetDependency */,
+			);
+			name = "Orkhestra Watch AppUITests";
+			productName = "Orkhestra Watch AppUITests";
+			productReference = 9CF2FAB6292D184700643C3C /* Orkhestra Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CF2FA6C292D184500643C3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					9CF2FA73292D184500643C3C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					9CF2FA83292D184600643C3C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9CF2FA73292D184500643C3C;
+					};
+					9CF2FA8D292D184600643C3C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9CF2FA73292D184500643C3C;
+					};
+					9CF2FA99292D184600643C3C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					9CF2FAAB292D184700643C3C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9CF2FA99292D184600643C3C;
+					};
+					9CF2FAB5292D184700643C3C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9CF2FA99292D184600643C3C;
+					};
+				};
+			};
+			buildConfigurationList = 9CF2FA6F292D184500643C3C /* Build configuration list for PBXProject "Orkhestra" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CF2FA6B292D184500643C3C;
+			productRefGroup = 9CF2FA75292D184500643C3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CF2FA73292D184500643C3C /* Orkhestra */,
+				9CF2FA83292D184600643C3C /* OrkhestraTests */,
+				9CF2FA8D292D184600643C3C /* OrkhestraUITests */,
+				9CF2FA99292D184600643C3C /* Orkhestra Watch App */,
+				9CF2FAAB292D184700643C3C /* Orkhestra Watch AppTests */,
+				9CF2FAB5292D184700643C3C /* Orkhestra Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CF2FA72292D184500643C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF2FA7F292D184600643C3C /* Preview Assets.xcassets in Resources */,
+				9CF2FA7C292D184600643C3C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FA82292D184600643C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FA8C292D184600643C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FA98292D184600643C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF2FAA7292D184700643C3C /* Preview Assets.xcassets in Resources */,
+				9CF2FAA4292D184700643C3C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FAAA292D184700643C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FAB4292D184700643C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CF2FA70292D184500643C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF2FADB292D19AB00643C3C /* HistoryViewModel.swift in Sources */,
+				9CF2FAD8292D195200643C3C /* WatchConnectivity.swift in Sources */,
+				9CF2FAF3292D1BAF00643C3C /* AudioManager.swift in Sources */,
+				9CF2FADD292D19C500643C3C /* HistoryModel.swift in Sources */,
+				9CF2FAFB292D1C3F00643C3C /* OrkhestraView.swift in Sources */,
+				9CF2FAF7292D1C0C00643C3C /* GameView.swift in Sources */,
+				9CF2FAFD292D1C5600643C3C /* GameViewModel.swift in Sources */,
+				9CF2FAF1292D1B9900643C3C /* CardModel.swift in Sources */,
+				9CF2FA7A292D184500643C3C /* HistoryView.swift in Sources */,
+				9CF2FA78292D184500643C3C /* OrkhestraApp.swift in Sources */,
+				9CF2FAF5292D1BDD00643C3C /* ContDownView.swift in Sources */,
+				9CF2FAF9292D1C2600643C3C /* CardView.swift in Sources */,
+				9CF2FAD5292D191400643C3C /* Counter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FA80292D184600643C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FA8A292D184600643C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FA96292D184600643C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF2FAD9292D195200643C3C /* WatchConnectivity.swift in Sources */,
+				9CF2FAE3292D1A6A00643C3C /* MenuViewWatchApp.swift in Sources */,
+				9CF2FAA2292D184600643C3C /* ContentView.swift in Sources */,
+				9CF2FAEF292D1B6E00643C3C /* AudioModel.swift in Sources */,
+				9CF2FAEB292D1AF600643C3C /* ChallengeWatchView.swift in Sources */,
+				9CF2FAE1292D1A4700643C3C /* HIstoryModelWatch.swift in Sources */,
+				9CF2FAE7292D1AB300643C3C /* InstrumentsView.swift in Sources */,
+				9CF2FAA0292D184600643C3C /* OrkhestraApp.swift in Sources */,
+				9CF2FADF292D1A2D00643C3C /* InstrumentModel.swift in Sources */,
+				9CF2FAD6292D191400643C3C /* Counter.swift in Sources */,
+				9CF2FAE9292D1AD400643C3C /* CircularProgressView.swift in Sources */,
+				9CF2FAED292D1B1300643C3C /* PlayOrkhestraView.swift in Sources */,
+				9CF2FAE5292D1A8E00643C3C /* HistoryViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FAA8292D184700643C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2FAB2292D184700643C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CF2FA86292D184600643C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CF2FA73292D184500643C3C /* Orkhestra */;
+			targetProxy = 9CF2FA85292D184600643C3C /* PBXContainerItemProxy */;
+		};
+		9CF2FA90292D184600643C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CF2FA73292D184500643C3C /* Orkhestra */;
+			targetProxy = 9CF2FA8F292D184600643C3C /* PBXContainerItemProxy */;
+		};
+		9CF2FA9D292D184600643C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CF2FA99292D184600643C3C /* Orkhestra Watch App */;
+			targetProxy = 9CF2FA9C292D184600643C3C /* PBXContainerItemProxy */;
+		};
+		9CF2FAAE292D184700643C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CF2FA99292D184600643C3C /* Orkhestra Watch App */;
+			targetProxy = 9CF2FAAD292D184700643C3C /* PBXContainerItemProxy */;
+		};
+		9CF2FAB8292D184700643C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CF2FA99292D184600643C3C /* Orkhestra Watch App */;
+			targetProxy = 9CF2FAB7292D184700643C3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9CF2FABE292D184700643C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CF2FABF292D184700643C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9CF2FAC1292D184700643C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Orkhestra Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = YFB3KM7U74;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Orkhestra;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Academy.Orkhestra;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.Orkhestra.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		9CF2FAC2292D184700643C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Orkhestra Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = YFB3KM7U74;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Orkhestra;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Academy.Orkhestra;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.Orkhestra.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		9CF2FAC5292D184700643C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Orkhestra/Preview Content\"";
+				DEVELOPMENT_TEAM = YFB3KM7U74;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Orkhestra;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.Orkhestra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CF2FAC6292D184700643C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Orkhestra/Preview Content\"";
+				DEVELOPMENT_TEAM = YFB3KM7U74;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Orkhestra;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.Orkhestra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CF2FAC8292D184700643C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YFB3KM7U74;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.OrkhestraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orkhestra.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Orkhestra";
+			};
+			name = Debug;
+		};
+		9CF2FAC9292D184700643C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YFB3KM7U74;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.OrkhestraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orkhestra.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Orkhestra";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CF2FACB292D184700643C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YFB3KM7U74;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.OrkhestraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Orkhestra;
+			};
+			name = Debug;
+		};
+		9CF2FACC292D184700643C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YFB3KM7U74;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.OrkhestraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Orkhestra;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CF2FACE292D184700643C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YFB3KM7U74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Academy.Orkhestra-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orkhestra Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Orkhestra Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		9CF2FACF292D184700643C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YFB3KM7U74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Academy.Orkhestra-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orkhestra Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Orkhestra Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		9CF2FAD1292D184700643C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YFB3KM7U74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Academy.Orkhestra-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Orkhestra Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		9CF2FAD2292D184700643C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YFB3KM7U74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Academy.Orkhestra-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Orkhestra Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CF2FA6F292D184500643C3C /* Build configuration list for PBXProject "Orkhestra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF2FABE292D184700643C3C /* Debug */,
+				9CF2FABF292D184700643C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CF2FAC0292D184700643C3C /* Build configuration list for PBXNativeTarget "Orkhestra Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF2FAC1292D184700643C3C /* Debug */,
+				9CF2FAC2292D184700643C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CF2FAC4292D184700643C3C /* Build configuration list for PBXNativeTarget "Orkhestra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF2FAC5292D184700643C3C /* Debug */,
+				9CF2FAC6292D184700643C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CF2FAC7292D184700643C3C /* Build configuration list for PBXNativeTarget "OrkhestraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF2FAC8292D184700643C3C /* Debug */,
+				9CF2FAC9292D184700643C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CF2FACA292D184700643C3C /* Build configuration list for PBXNativeTarget "OrkhestraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF2FACB292D184700643C3C /* Debug */,
+				9CF2FACC292D184700643C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CF2FACD292D184700643C3C /* Build configuration list for PBXNativeTarget "Orkhestra Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF2FACE292D184700643C3C /* Debug */,
+				9CF2FACF292D184700643C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CF2FAD0292D184700643C3C /* Build configuration list for PBXNativeTarget "Orkhestra Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF2FAD1292D184700643C3C /* Debug */,
+				9CF2FAD2292D184700643C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CF2FA6C292D184500643C3C /* Project object */;
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "chocolateazulejo.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
