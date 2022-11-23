@@ -53,41 +53,122 @@ struct ChallengeWatchView: View {
               
             }
             .onAppear {
-                self.motionManager.startDeviceMotionUpdates(to: self.queue) { (data: CMDeviceMotion?, error: Error?) in
-                    guard let data = data else {
-                        print("Error: \(error!)")
-                        return
-                    }
-                    let attitude: CMAttitude = data.attitude
-
-                    if attitude.pitch >= 0 && attitude.pitch <= 0.2 {
-                        estado = true
-                    }
-
-                    if attitude.pitch <= -1 && estado == true && control == true {
-                        estado = false
-                        audioManager.playSound(sound: currentInstrument.name)
-                        progress += 1/10
-
-                    }
-                    
-                    if(progress >= 0.9){
-                        victory = true
-                        control = false
-                    }
-                    
-                    print("pitch: \(attitude.pitch)")
-                    print("yaw: \(attitude.yaw)")
-                    print("roll: \(attitude.roll)")
-
-                    if !estado {
-                        DispatchQueue.main.async {
-                            self.pitch = attitude.pitch
-                            self.yaw = attitude.yaw
-                            self.roll = attitude.roll
+                if(hvm.historyId == 0){
+                
+                    self.motionManager.startDeviceMotionUpdates(to: self.queue) { (data: CMDeviceMotion?, error: Error?) in
+                        guard let data = data else {
+                            print("Error: \(error!)")
+                            return
+                        }
+                        let attitude: CMAttitude = data.attitude
+                        
+                        if attitude.pitch >= 0 && attitude.pitch <= 0.2 {
+                            estado = true
+                        }
+                        
+                        if attitude.pitch <= -1 && estado == true && control == true {
+                            estado = false
+                            audioManager.playSound(sound: currentInstrument.name)
+                            progress += 1/10
+                            
+                        }
+                        
+                        if(progress >= 0.9){
+                            victory = true
+                            control = false
+                        }
+                        
+                        print("pitch: \(attitude.pitch)")
+                        print("yaw: \(attitude.yaw)")
+                        print("roll: \(attitude.roll)")
+                        
+                        if !estado {
+                            DispatchQueue.main.async {
+                                self.pitch = attitude.pitch
+                                self.yaw = attitude.yaw
+                                self.roll = attitude.roll
+                            }
                         }
                     }
                 }
+                if(hvm.historyId == 1){
+
+                    self.motionManager.startDeviceMotionUpdates(to: self.queue) { (data: CMDeviceMotion?, error: Error?) in
+                        guard let data = data else {
+                            print("Error: \(error!)")
+                            return
+                        }
+                        let attitude: CMAttitude = data.attitude
+                        
+                        if attitude.yaw >= 0 && attitude.yaw <= 0.2 {
+                            estado = true
+                        }
+                        
+                        if attitude.yaw > 1 && estado == true && control == true {
+                            estado = false
+                            audioManager.playSound(sound: currentInstrument.name)
+                            progress += 1/10
+                            
+                        }
+                        
+                        if(progress >= 0.9){
+                            victory = true
+                            control = false
+                        }
+                        
+                        print("pitch: \(attitude.pitch)")
+                        print("yaw: \(attitude.yaw)")
+                        print("roll: \(attitude.roll)")
+                        
+                        if !estado {
+                            DispatchQueue.main.async {
+                                self.pitch = attitude.pitch
+                                self.yaw = attitude.yaw
+                                self.roll = attitude.roll
+                            }
+                        }
+                    }
+                }
+                
+                if(hvm.historyId == 2){
+           
+                    self.motionManager.startDeviceMotionUpdates(to: self.queue) { (data: CMDeviceMotion?, error: Error?) in
+                        guard let data = data else {
+                            print("Error: \(error!)")
+                            return
+                        }
+                        let attitude: CMAttitude = data.attitude
+                        
+                        if attitude.roll >= 0 && attitude.roll <= 0.2 {
+                            estado = true
+                        }
+                        
+                        if attitude.roll <= -1 && estado == true && control == true {
+                            estado = false
+                            audioManager.playSound(sound: currentInstrument.name)
+                            progress += 1/10
+                            
+                        }
+                        
+                        if(progress >= 0.9){
+                            victory = true
+                            control = false
+                        }
+                        
+                        print("pitch: \(attitude.pitch)")
+                        print("yaw: \(attitude.yaw)")
+                        print("roll: \(attitude.roll)")
+                        
+                        if !estado {
+                            DispatchQueue.main.async {
+                                self.pitch = attitude.pitch
+                                self.yaw = attitude.yaw
+                                self.roll = attitude.roll
+                            }
+                        }
+                    }
+                }
+                
             }
             .onDisappear {
                 control = false
