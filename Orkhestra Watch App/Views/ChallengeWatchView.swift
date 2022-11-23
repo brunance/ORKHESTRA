@@ -48,7 +48,8 @@ struct ChallengeWatchView: View {
                 Spacer()
 
                 Text(currentInstrument.challenge)
-                    .font(.system(size: 20))
+                    .font(.system(size: 17))
+                    .multilineTextAlignment(.center)
 
               
             }
