@@ -91,7 +91,7 @@ struct OrchestraView: View {
                                 .font(.system(size: 75))
                                 .foregroundColor(Color("PlayButton"))
                         })
-                        Text("Tocar")
+                        Text((audioManager.player?.isPlaying ?? false) ? "Pausar" : "Tocar")
                             .font(.system(size: 12))
                             .foregroundColor(Color("TitleOrchestra"))
                     }
