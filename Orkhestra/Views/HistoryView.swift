@@ -75,7 +75,7 @@ struct HistoryView: View {
                                     Text("30s | Música, Instrumental")
                                         .font(.system(size: 12))
                                         .foregroundColor(Color("TitleHistory"))
-                                    Text("COUNTER:: \(counter.count)")
+                                    Text("Instrumentos: \(counter.count)")
                                         .font(.system(size: 12))
                                         .foregroundColor(Color("TitleHistory"))
                                 }
