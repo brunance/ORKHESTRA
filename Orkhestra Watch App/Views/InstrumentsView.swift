@@ -9,7 +9,7 @@ import SwiftUI
 struct InstrumentsView: View {
 
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
-    @ObservedObject var ovm: Counter = Counter.shared
+    
 
     @StateObject var counter = Counter()
     
