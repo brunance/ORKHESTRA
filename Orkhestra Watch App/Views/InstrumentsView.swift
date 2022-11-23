@@ -9,6 +9,7 @@ import SwiftUI
 struct InstrumentsView: View {
 
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
+    
 
     @StateObject var counter = Counter()
     
@@ -33,11 +34,8 @@ struct InstrumentsView: View {
 
                             Button(action: {
                                 hvm.instrumentId = instrument.id
-                                
-                                counter.increment()
-                                print(counter.count)
-                                counter.increment()
-                                print(counter.count)
+                               
+                        
                             }, label: {})
 
                             NavigationLink(destination: ChallengeWatchView()) {
