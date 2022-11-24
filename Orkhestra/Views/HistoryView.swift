@@ -13,7 +13,7 @@ struct HistoryView: View {
     @State var isGameView = true
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
     
-    @StateObject var counter = Counter()
+//    @StateObject var counter = Counter()
 
     let columns = [
         GridItem(.flexible())
@@ -42,7 +42,7 @@ struct HistoryView: View {
                                         showingSheet.toggle()
                                         hvm.historyId = item.id
                                         
-                                        print(counter.count)
+//                                        print(counter.count)
                                         
                                     }, label: {
 
@@ -75,9 +75,9 @@ struct HistoryView: View {
                                     Text("30s | Música, Instrumental")
                                         .font(.system(size: 12))
                                         .foregroundColor(Color("TitleHistory"))
-                                    Text("Instrumentos: \(counter.count)")
-                                        .font(.system(size: 12))
-                                        .foregroundColor(Color("TitleHistory"))
+//                                    Text("Instrumentos: \(counter.count)")
+//                                        .font(.system(size: 12))
+//                                        .foregroundColor(Color("TitleHistory"))
                                 }
                                 .padding(.init(top: 640, leading: 121, bottom: 240, trailing: 119))
                                 VStack {

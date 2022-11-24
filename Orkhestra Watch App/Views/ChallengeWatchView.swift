@@ -20,7 +20,7 @@ struct ChallengeWatchView: View {
     @State private var yaw = Double.zero
     @State private var roll = Double.zero
     @EnvironmentObject var audioManager: AudioManagerWatch
-    @StateObject var counter = Counter()
+//    @StateObject var counter = Counter()
     var body: some View {
 //        let currentInstrument = historyList[hvm.historyId]
 //                                    .lisfOfInstruments
@@ -75,7 +75,7 @@ struct ChallengeWatchView: View {
                         }
                         
                         if(progress >= 0.9){
-                            counter.increment()
+//                            counter.increment()
                             victory = true
                             control = false
                         }
@@ -102,11 +102,11 @@ struct ChallengeWatchView: View {
                         }
                         let attitude: CMAttitude = data.attitude
                         
-                        if attitude.yaw >= 1.7 && attitude.yaw <= 1.9 {
+                        if attitude.yaw >= 0.4 && attitude.yaw <= 0.6 {
                             estado = true
                         }
                         
-                        if attitude.yaw > 0 && attitude.yaw <= 0.5 && estado == true && control == true {
+                        if attitude.yaw <= -0.4 && attitude.yaw > -0.6 && estado == true && control == true {
                             estado = false
                             audioManager.playSound(sound: currentInstrument.name)
                             progress += 1/10
@@ -114,7 +114,7 @@ struct ChallengeWatchView: View {
                         }
                         
                         if(progress >= 0.9){
-                            counter.increment()
+//                            counter.increment()
                             victory = true
                             control = false
                         }
@@ -154,7 +154,7 @@ struct ChallengeWatchView: View {
                         }
                         
                         if(progress >= 0.9){
-                            counter.increment()
+//                            counter.increment()
                             victory = true
                             control = false
                         }
