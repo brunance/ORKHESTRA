@@ -22,13 +22,13 @@ struct HistoryView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color("Primaria1").ignoresSafeArea()
+                Color.primaria1.ignoresSafeArea()
 
                 VStack {
                     TabView {
                         ForEach(historyList, id: \.self) { item in
                             ZStack {
-                                Color("Primaria1")
+                                Color.primaria1
                                 Image("\(item.name)Padrao")
                                     .resizable()
                                 Image("\(item.name)Card")
@@ -49,11 +49,11 @@ struct HistoryView: View {
                                         ZStack {
                                             Image(systemName: "questionmark.circle.fill")
                                                 .font(.system(size: 43))
-                                                .foregroundColor(Color("BackQuestion"))
+                                                .foregroundColor(Color.backQuestion)
 
                                             Image(systemName: "questionmark.circle")
                                                 .font(.system(size: 43))
-                                                .foregroundStyle(Color("LightQuestion"))
+                                                .foregroundStyle(Color.lightQuestion)
                                         }
                                     })
                                     .sheet(isPresented: $showingSheet) {
@@ -67,14 +67,14 @@ struct HistoryView: View {
                                         Text(item.titleList[num])
                                             // swiftlint:disable:next line_length
                                             .font(.custom("RubikBubbles-Regular", size: CGFloat(item.sizeTitleList[num])))
-                                            .foregroundColor(Color("TitleHistory"))
+                                            .foregroundColor(Color.titleHistory)
                                     }
                                 }
                                 .padding(.init(top: 440, leading: 30, bottom: 200, trailing: 30))
                                 VStack {
                                     Text("30s | Música, Instrumental")
                                         .font(.system(size: 12))
-                                        .foregroundColor(Color("TitleHistory"))
+                                        .foregroundColor(Color.titleHistory)
 //                                    Text("Instrumentos: \(counter.count)")
 //                                        .font(.system(size: 12))
 //                                        .foregroundColor(Color("TitleHistory"))
@@ -92,10 +92,10 @@ struct HistoryView: View {
                                                 .padding(.init(top: 8, leading: 0, bottom: 8, trailing: 85.5))
                                                 .font(.system(size: 16))
                                         }
-                                        .foregroundColor(Color("CombinarText"))
+                                        .foregroundColor(Color.combinarText)
                                     })
                                     .frame(width: 296, height: 40)
-                                    .background(Color("TitleHistory"))
+                                    .background(Color.titleHistory)
                                     .cornerRadius(8)
                                     .ignoresSafeArea()
                                 }

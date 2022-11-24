@@ -52,7 +52,7 @@ struct PlayOrkhestraView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 40, height: 40)
-                                .foregroundColor(Color("Destaque1"))
+                                .foregroundColor(Color("destaque1"))
                             
                             Image(systemName: isPlaying ? "pause.fill" : "play.fill")
                                 .font(.system(size: 25))

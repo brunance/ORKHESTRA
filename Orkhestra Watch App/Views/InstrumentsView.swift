@@ -43,7 +43,7 @@ struct InstrumentsView: View {
                                     .font(.system(size: 14))
                                     .bold()
                             }
-                            .foregroundColor(Color("Destaque1"))
+                            .foregroundColor(Color("destaque1"))
 //                            .padding(.bottom, 5)
                         }
                         .frame(maxWidth: .infinity, maxHeight: 85, alignment: .center)

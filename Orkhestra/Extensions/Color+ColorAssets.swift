@@ -9,26 +9,26 @@ import Foundation
 import SwiftUI
 
 extension Color {
-    static let BackImageOrchestra = Color("BackImageOrchestra")
-    static let BackQuestion = Color("BackQuestion")
-    static let BackSheet = Color("BackSheet")
+    static let backImageOrchestra = Color("BackImageOrchestra")
+    static let backQuestion = Color("BackQuestion")
+    static let backSheet = Color("BackSheet")
     
-    static let Primaria1 = Color("Primaria1")
+    static let primaria1 = Color("Primaria1")
     
-    static let Destaque1 = Color("Destaque1")
+    static let destaque1 = Color("Destaque1")
     
-    static let LightQuestion = Color("LightQuestion")
+    static let lightQuestion = Color("LightQuestion")
     
-    static let TitleHistory = Color("TitleHistory")
-    static let TitleSheet = Color("TitleSheet")
-    static let TitleInstrumentos = Color("TitleInstrumentos")
-    static let TitleOrchestra = Color("TitleOrchestra")
+    static let titleHistory = Color("TitleHistory")
+    static let titleSheet = Color("TitleSheet")
+    static let titleInstrumentos = Color("TitleInstrumentos")
+    static let titleOrchestra = Color("TitleOrchestra")
     
-    static let CombinarText = Color("CombinarText")
+    static let combinarText = Color("CombinarText")
     
-    static let CircleCount = Color("CircleCount")
+    static let circleCount = Color("CircleCount")
     
-    static let PlayButton = Color("PlayButton")
+    static let playButton = Color("PlayButton")
 }
 
 

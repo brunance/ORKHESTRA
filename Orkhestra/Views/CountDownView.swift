@@ -24,14 +24,14 @@ struct CountDownView: View {
 
         NavigationView {
             ZStack {
-                Color("CombinarText").ignoresSafeArea()
+                Color.combinarText.ignoresSafeArea()
                 Image("\(currentHistory.name)Padrao")
                     .resizable()
                 VStack {
                     ZStack {
                         Image(systemName: "circle.fill")
                             .font(.system(size: 200))
-                            .foregroundColor(Color("CircleCount"))
+                            .foregroundColor(Color.circleCount)
                             .scaleEffect(scale)
                             .opacity(Double(2 - scale))
                             .onAppear {
@@ -53,9 +53,9 @@ struct CountDownView: View {
                                 }
                             }
                             .font(.custom("RubikBubbles-Regular", size: 100))
-                            .foregroundColor(Color("CombinarText"))
+                            .foregroundColor(Color.combinarText)
                             .frame(width: 200, height: 200)
-                            .background(Color("CircleCount"))
+                            .background(Color.circleCount)
                             .clipShape(Circle())
 
                         if isGameView {
