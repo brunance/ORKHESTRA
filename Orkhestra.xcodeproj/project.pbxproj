@@ -288,7 +288,6 @@
 		8BD82FFD292D795B00799DA9 = {
 			isa = PBXGroup;
 			children = (
-				8B804934292FA785005E6CF0 /* Sound */,
 				8BD830A7292D7D8A00799DA9 /* Shared */,
 				8BD83008292D795B00799DA9 /* Orkhestra */,
 				8BD8301A292D795C00799DA9 /* Orkhestra Watch App */,
@@ -308,6 +307,7 @@
 		8BD83008292D795B00799DA9 /* Orkhestra */ = {
 			isa = PBXGroup;
 			children = (
+				8B804934292FA785005E6CF0 /* Sound */,
 				8B804930292F9F47005E6CF0 /* Extensions */,
 				9CC09643292D8A0500DCCCE1 /* Fonts */,
 				9CC09640292D899A00DCCCE1 /* Info.plist */,

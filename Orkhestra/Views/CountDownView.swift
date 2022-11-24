@@ -35,7 +35,7 @@ struct CountDownView: View {
                             .scaleEffect(scale)
                             .opacity(Double(2 - scale))
                             .onAppear {
-                                audioManager.playSound(sound: "countdown")
+                                audioManager.playSound(sound: "Countdown")
                                 let baseAnimation = Animation.easeInOut(duration: 0.9)
                                 let repeated = baseAnimation.repeatForever(autoreverses: false)
                                 withAnimation(repeated) {
@@ -45,7 +45,7 @@ struct CountDownView: View {
                         Text("\(countDownTimer)")
                             .onReceive(timer) { _ in
                                 if countDownTimer > 1 && timerRunning {
-                                    audioManager.playSound(sound: "countdown")
+                                    audioManager.playSound(sound: "Countdown")
                                     countDownTimer -= 1
                                 } else {
                                     isShowingDetailView = true
