@@ -40,11 +40,10 @@ struct InstrumentsView: View {
 
                             NavigationLink(destination: ChallengeWatchView()) {
                                 Text(instrument.name)
+                                    .foregroundColor(Color("Destaque1"))
                                     .font(.system(size: 14))
                                     .bold()
                             }
-                            .foregroundColor(Color("destaque1"))
-//                            .padding(.bottom, 5)
                         }
                         .frame(maxWidth: .infinity, maxHeight: 85, alignment: .center)
                         .padding()
