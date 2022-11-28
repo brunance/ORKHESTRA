@@ -22,7 +22,7 @@ struct CircularProgressView: View {
             Circle()
                 .trim(from: 0, to: progress)
                 .stroke(
-                    Color("Destaque1"),
+                    Color("destaque1"),
                     style: StrokeStyle(
                         lineWidth: CGFloat(strokeLine),
                         lineCap: .round

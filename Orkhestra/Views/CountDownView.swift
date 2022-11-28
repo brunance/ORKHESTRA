@@ -10,10 +10,10 @@ import SwiftUI
 struct CountDownView: View {
     @State private var isShowingDetailView = false
     @State var countDownTimer = 3
-    @State var timerRunning = true
+//    @State var timerRunning = true
     @State var scale: CGFloat = 1
     @Binding var isGameView: Bool
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
 
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
     @EnvironmentObject var audioManager: AudioManager
@@ -21,21 +21,22 @@ struct CountDownView: View {
     var body: some View {
 
         let currentHistory = historyList[hvm.historyId]
-
+        let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+        
         NavigationView {
             ZStack {
-                Color("CombinarText").ignoresSafeArea()
+                Color.combinarText.ignoresSafeArea()
                 Image("\(currentHistory.name)Padrao")
                     .resizable()
                 VStack {
                     ZStack {
                         Image(systemName: "circle.fill")
                             .font(.system(size: 200))
-                            .foregroundColor(Color("CircleCount"))
+                            .foregroundColor(Color.circleCount)
                             .scaleEffect(scale)
                             .opacity(Double(2 - scale))
                             .onAppear {
-                                audioManager.playSound(sound: "countdown")
+                                audioManager.playSound(sound: "Countdown")
                                 let baseAnimation = Animation.easeInOut(duration: 0.9)
                                 let repeated = baseAnimation.repeatForever(autoreverses: false)
                                 withAnimation(repeated) {
@@ -44,18 +45,18 @@ struct CountDownView: View {
                             }
                         Text("\(countDownTimer)")
                             .onReceive(timer) { _ in
-                                if countDownTimer > 1 && timerRunning {
-                                    audioManager.playSound(sound: "countdown")
+                                if countDownTimer > 1 {
+                                    audioManager.playSound(sound: "Countdown")
                                     countDownTimer -= 1
                                 } else {
+                                    timer.upstream.connect().cancel()
                                     isShowingDetailView = true
-                                    timerRunning = false
                                 }
                             }
                             .font(.custom("RubikBubbles-Regular", size: 100))
-                            .foregroundColor(Color("CombinarText"))
+                            .foregroundColor(Color.combinarText)
                             .frame(width: 200, height: 200)
-                            .background(Color("CircleCount"))
+                            .background(Color.circleCount)
                             .clipShape(Circle())
 
                         if isGameView {

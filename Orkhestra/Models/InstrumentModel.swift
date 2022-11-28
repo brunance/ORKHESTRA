@@ -13,12 +13,14 @@ struct InstrumentModel: Identifiable, Hashable {
     var name: String
     var image: String
     var challenge: String
+    var unlock: Bool
 
-    init(id: Int, name: String, image: String, challenge: String) {
+    init(id: Int, name: String, image: String, challenge: String, unlock: Bool) {
         self.id = id
         self.name = name
         self.image = image
         self.challenge = challenge
+        self.unlock = unlock
     }
 }
 

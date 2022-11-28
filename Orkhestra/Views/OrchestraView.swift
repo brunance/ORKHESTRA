@@ -23,7 +23,7 @@ struct OrchestraView: View {
 
         NavigationView {
             ZStack {
-                Color("CombinarText").ignoresSafeArea()
+                Color.combinarText.ignoresSafeArea()
                 Image("\(currentHistory.name)Padrao")
                     .resizable()
 
@@ -37,7 +37,7 @@ struct OrchestraView: View {
                                 Image(systemName: "chevron.down.circle.fill")
                                     .frame(alignment: .trailing)
                                     .font(.system(size: 37))
-                                    .foregroundStyle(Color("CircleCount"))
+                                    .foregroundStyle(Color.circleCount)
                             }
                             .frame(maxWidth: .infinity, alignment: .leading)
                         })
@@ -45,16 +45,16 @@ struct OrchestraView: View {
                         Text("Orkhéstra")
                             .fontWeight(.bold)
                             .font(.system(size: 16))
-                            .foregroundColor(Color("TitleOrchestra"))
+                            .foregroundColor(Color.titleOrchestra)
                     }
                     Image("\(currentHistory.name)Orquestra")
                         .frame(width: 358, height: 334)
-                        .background(Color("BackImageOrchestra"))
+                        .background(Color.backImageOrchestra)
                         .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
 
                     Text(currentHistory.title)
                         .font(.custom("RubikBubbles-Regular", size: 24))
-                        .foregroundColor(Color("TitleHistory"))
+                        .foregroundColor(Color.titleHistory)
                         .bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -67,8 +67,8 @@ struct OrchestraView: View {
                                 audioManager.player?.currentTime = value
                             }
                         }
-                        .accentColor(Color("Destaque1"))
-                        .tint(Color("Destaque1"))
+                        .accentColor(Color.destaque1)
+                        .tint(Color.destaque1)
 
                         HStack {
                             // swiftlint:disable:next line_length
@@ -80,7 +80,7 @@ struct OrchestraView: View {
                             Text(DateComponentsFormatter.positional.string(from: (audioManager.player?.duration ?? 0)) ?? "0:00")
                         }
                         .font(.system(size: 12))
-                        .foregroundColor(Color("TitleOrchestra"))
+                        .foregroundColor(Color.titleOrchestra)
                     }
                     VStack {
                         Button(action: {
@@ -89,11 +89,11 @@ struct OrchestraView: View {
                             // swiftlint:disable:next line_length
                             Image(systemName: (audioManager.player?.isPlaying ?? false) ? "pause.circle.fill" : "play.circle.fill")
                                 .font(.system(size: 75))
-                                .foregroundColor(Color("PlayButton"))
+                                .foregroundColor(Color.playButton)
                         })
                         Text((audioManager.player?.isPlaying ?? false) ? "Pausar" : "Tocar")
                             .font(.system(size: 12))
-                            .foregroundColor(Color("TitleOrchestra"))
+                            .foregroundColor(Color.titleOrchestra)
                     }
                 }
                 .padding(20)
@@ -102,7 +102,7 @@ struct OrchestraView: View {
             }
             .ignoresSafeArea()
             .onAppear {
-                audioManager.playSound(sound: currentHistory.name)
+                audioManager.playSound(sound: "\(currentHistory.name)Musica")
             }
             .onReceive(timer) { _ in
                 guard let player = audioManager.player, !isEditing else { return }

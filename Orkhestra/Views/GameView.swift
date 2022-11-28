@@ -42,7 +42,7 @@ struct GameView: View {
         } else {
             NavigationView {
                 ZStack {
-                    Color("Primaria1").ignoresSafeArea()
+                    Color.primaria1.ignoresSafeArea()
                     Image("\(currentHistory.name)Padrao")
                         .resizable()
                     VStack {
@@ -54,7 +54,7 @@ struct GameView: View {
                                     Image(systemName: "xmark.circle.fill")
                                         .frame(alignment: .trailing)
                                         .font(.system(size: 37))
-                                        .foregroundStyle(Color("CircleCount"))
+                                        .foregroundStyle(Color.circleCount)
                                 }
                                 .frame(maxWidth: .infinity, alignment: .trailing)
                             })
@@ -79,7 +79,7 @@ struct GameView: View {
                                     Text(currentHistory.titleList[num])
                                     // swiftlint:disable:next line_length
                                         .font(.custom("RubikBubbles-Regular", size: CGFloat(currentHistory.sizeTitleList[num])))
-                                        .foregroundColor(Color("TitleHistory"))
+                                        .foregroundColor(Color.titleHistory)
                                 }
                             }
                         }
@@ -88,26 +88,26 @@ struct GameView: View {
                         Text("Combine os sons para desbloquear uma melodia")
                             .font(.system(size: 16))
                             .bold()
-                            .foregroundColor(Color("TitleHistory"))
+                            .foregroundColor(Color.titleHistory)
                             .multilineTextAlignment(.center)
 
                         HStack {
                             if matchedCards.count > 0 {
                                 Text(matchedCards[matchedCards.count-1].text)
                                     .font(.system(size: 16))
-                                    .foregroundColor(Color("TitleHistory"))
+                                    .foregroundColor(Color.titleHistory)
                                 Spacer()
                             }
                             Text("\(matchedCards.count/2)/\(cardValues.count)")
                                 .frame(maxWidth: .infinity, alignment: .trailing)
                                 .font(.system(size: 16))
-                                .foregroundColor(Color("TitleHistory"))
+                                .foregroundColor(Color.titleHistory)
                         }
 
                         VStack {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 8, style: .continuous)
-                                    .foregroundColor(Color("TitleHistory"))
+                                    .foregroundColor(Color.titleHistory)
                                     .frame(width: 350, height: 60)
                                 HStack {
                                     ForEach(instrumentsList, id: \.self) { instrument in
@@ -116,14 +116,12 @@ struct GameView: View {
                                                 Image(instrument)
                                                     .resizable()
                                                     .frame(width: CGFloat(width), height: CGFloat(height))
-                                                    .foregroundColor(.red)
                                             }
                                         } else {
                                             VStack {
                                                 Image("\(instrument)Silhueta")
                                                     .resizable()
                                                     .frame(width: CGFloat(width), height: CGFloat(height))
-                                                    .foregroundColor(.red)
                                             }
                                         }
                                     }
