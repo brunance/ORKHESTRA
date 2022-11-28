@@ -10,10 +10,10 @@ import SwiftUI
 struct CountDownView: View {
     @State private var isShowingDetailView = false
     @State var countDownTimer = 3
-    @State var timerRunning = true
+//    @State var timerRunning = true
     @State var scale: CGFloat = 1
     @Binding var isGameView: Bool
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
 
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
     @EnvironmentObject var audioManager: AudioManager
@@ -21,7 +21,8 @@ struct CountDownView: View {
     var body: some View {
 
         let currentHistory = historyList[hvm.historyId]
-
+        let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+        
         NavigationView {
             ZStack {
                 Color.combinarText.ignoresSafeArea()
@@ -44,12 +45,12 @@ struct CountDownView: View {
                             }
                         Text("\(countDownTimer)")
                             .onReceive(timer) { _ in
-                                if countDownTimer > 1 && timerRunning {
+                                if countDownTimer > 1 {
                                     audioManager.playSound(sound: "Countdown")
                                     countDownTimer -= 1
                                 } else {
+                                    timer.upstream.connect().cancel()
                                     isShowingDetailView = true
-                                    timerRunning = false
                                 }
                             }
                             .font(.custom("RubikBubbles-Regular", size: 100))

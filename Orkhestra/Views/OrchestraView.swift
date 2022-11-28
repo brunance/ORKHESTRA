@@ -102,7 +102,7 @@ struct OrchestraView: View {
             }
             .ignoresSafeArea()
             .onAppear {
-                audioManager.playSound(sound: currentHistory.name)
+                audioManager.playSound(sound: "\(currentHistory.name)Musica")
             }
             .onReceive(timer) { _ in
                 guard let player = audioManager.player, !isEditing else { return }
