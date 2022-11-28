@@ -12,6 +12,7 @@ struct HistoryView: View {
     @State private var showingCountDown = false
     @State var isGameView = true
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
+    @StateObject var counter = Counter()
     
 //    @StateObject var counter = Counter()
 
@@ -40,7 +41,8 @@ struct HistoryView: View {
                                 ZStack {
                                     Button(action: {
                                         showingSheet.toggle()
-                                        hvm.historyId = item.id
+                                        print(historyList[0].lisfOfInstruments[0].unlock)
+                                        updateCount(historyId: counter.count[0], instrumentsId: counter.count[1])
                                         
 //                                        print(counter.count)
                                         
@@ -82,8 +84,9 @@ struct HistoryView: View {
                                 .padding(.init(top: 640, leading: 121, bottom: 240, trailing: 119))
                                 VStack {
                                     Button(action: {
-                                        showingCountDown.toggle()
                                         hvm.historyId = item.id
+                                        showingCountDown.toggle()
+                                       
                                     }, label: {
                                         HStack {
                                             Image(systemName: "play.fill")
@@ -109,10 +112,16 @@ struct HistoryView: View {
                     // swiftlint:disable:next line_length
                     NavigationLink(destination: CountDownView(isGameView: $isGameView).navigationBarBackButtonHidden(true), isActive: $showingCountDown) {}
                 }
+                .onAppear{
+                    print(historyList[0].lisfOfInstruments[1].unlock)
+                   
+                }
             }
         }
     }
 }
+
+
 
 struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {

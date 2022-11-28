@@ -34,6 +34,8 @@ struct InstrumentsView: View {
 
                             Button(action: {
                                 hvm.instrumentId = instrument.id
+                                counter.increment(historyId: hvm.historyId,instrumentId: hvm.instrumentId)
+                                print(counter.count)
                                
                         
                             }, label: {})

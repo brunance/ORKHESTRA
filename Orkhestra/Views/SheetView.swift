@@ -11,6 +11,7 @@ import SwiftUI
 struct SheetView: View {
     @Environment(\.dismiss) var dismiss
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
+    @StateObject var counter = Counter()
 
     let width: Int = 35
     let height: Int = 10
@@ -35,10 +36,12 @@ struct SheetView: View {
                     }
                     .padding(.init(top: 0, leading: 20, bottom: 4, trailing: 20))
 
-                    Text("30s | Música, Instrumental")
-                        .font(.system(size: 12))
-                        .foregroundColor(Color("TitleHistory"))
-                        .padding(.init(top: 0, leading: 103, bottom: 20, trailing: 101))
+                    if(historyList[0].lisfOfInstruments[0].unlock == true){
+                        Text("30s | Música, Instrumental")
+                            .font(.system(size: 12))
+                            .foregroundColor(Color("TitleHistory"))
+                            .padding(.init(top: 0, leading: 103, bottom: 20, trailing: 101))
+                    }
 
                     Text("**\(currentHistory.description)**")
                         .multilineTextAlignment(.leading)
@@ -47,7 +50,8 @@ struct SheetView: View {
                         .foregroundColor(Color("TitleSheet"))
                         .lineSpacing(1)
 
-                    Text("INSTRUMENTOS DISPONÍVEIS")
+                    Text("\(counter.count[0])")
+                    Text("\(counter.count[1])")
                         .font(.custom("RubikBubbles-Regular", size: 16))
                         .foregroundColor(Color("TitleInstrumentos"))
                         .bold()
@@ -62,7 +66,7 @@ struct SheetView: View {
 
                             HStack(spacing: 12) {
                                 VStack {
-                                    Image("Pandeiro")
+                                    Image(currentHistory.lisfOfInstruments[0].unlock ? "Pandeiro" : "PandeiroSilhueta")
                                         .resizable()
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Pandeiro")

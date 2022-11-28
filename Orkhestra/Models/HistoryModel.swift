@@ -30,7 +30,7 @@ struct HistoryModel: Identifiable, Hashable {
     }
 }
 
-let historyList: [HistoryModel] = [
+var historyList: [HistoryModel] = [
 
     HistoryModel(
         id: 0,
