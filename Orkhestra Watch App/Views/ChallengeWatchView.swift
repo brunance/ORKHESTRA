@@ -70,7 +70,7 @@ struct ChallengeWatchView: View {
                         if attitude.pitch <= -1 && estado == true && control == true {
                             estado = false
                             audioManager.playSound(sound: "\(currentInstrument.image)Carta")
-                            print(progress)
+//                            print(progress)
                             progress += 1/10
                             
                         }
