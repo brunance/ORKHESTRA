@@ -30,7 +30,7 @@ let cardValues: [String] = [
 ]
 
 let cardSounds: [String] = [
-    "ChocalhoCarta", "FlautaCarta", "PandeiroCarta", "PianoCarta", "SaxofoneCarta", "ViolãoCarta"
+    "ChocalhoCarta", "FlautaCarta", "PandeiroCarta", "PianoCarta", "SaxofoneCarta", "ViolaoCarta"
 ]
 
 func createCardList() -> [CardModel] {

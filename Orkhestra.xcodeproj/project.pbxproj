@@ -25,7 +25,7 @@
 		8BD8303B292D79CF00799DA9 /* PandeiroCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83034292D79CF00799DA9 /* PandeiroCarta.mp3 */; };
 		8BD8303C292D79CF00799DA9 /* PianoCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83035292D79CF00799DA9 /* PianoCarta.mp3 */; };
 		8BD8303D292D79CF00799DA9 /* SaxofoneCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83036292D79CF00799DA9 /* SaxofoneCarta.mp3 */; };
-		8BD8303E292D79CF00799DA9 /* ViolãoCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83037292D79CF00799DA9 /* ViolãoCarta.mp3 */; };
+		8BD8303E292D79CF00799DA9 /* ViolaoCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83037292D79CF00799DA9 /* ViolaoCarta.mp3 */; };
 		8BD8303F292D79CF00799DA9 /* FlautaCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83038292D79CF00799DA9 /* FlautaCarta.mp3 */; };
 		8BD83040292D79CF00799DA9 /* Countdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83039292D79CF00799DA9 /* Countdown.mp3 */; };
 		8BD83048292D7A3400799DA9 /* BarataMusica.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83045292D7A3400799DA9 /* BarataMusica.mp3 */; };
@@ -72,7 +72,7 @@
 		8BD830A3292D7D2100799DA9 /* Countdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83039292D79CF00799DA9 /* Countdown.mp3 */; };
 		8BD830A4292D7D2100799DA9 /* FlautaCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83038292D79CF00799DA9 /* FlautaCarta.mp3 */; };
 		8BD830A5292D7D2100799DA9 /* ChocalhoCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83033292D79CF00799DA9 /* ChocalhoCarta.mp3 */; };
-		8BD830A6292D7D2100799DA9 /* ViolãoCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83037292D79CF00799DA9 /* ViolãoCarta.mp3 */; };
+		8BD830A6292D7D2100799DA9 /* ViolaoCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83037292D79CF00799DA9 /* ViolaoCarta.mp3 */; };
 		8BD830A9292D7D9E00799DA9 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD830A8292D7D9E00799DA9 /* Counter.swift */; };
 		8BD830AA292D7D9E00799DA9 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD830A8292D7D9E00799DA9 /* Counter.swift */; };
 		8BD830AC292D7DB600799DA9 /* WatchConnecivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD830AB292D7DB600799DA9 /* WatchConnecivity.swift */; };
@@ -121,7 +121,7 @@
 		8BD83034292D79CF00799DA9 /* PandeiroCarta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PandeiroCarta.mp3; sourceTree = "<group>"; };
 		8BD83035292D79CF00799DA9 /* PianoCarta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PianoCarta.mp3; sourceTree = "<group>"; };
 		8BD83036292D79CF00799DA9 /* SaxofoneCarta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SaxofoneCarta.mp3; sourceTree = "<group>"; };
-		8BD83037292D79CF00799DA9 /* ViolãoCarta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ViolãoCarta.mp3"; sourceTree = "<group>"; };
+		8BD83037292D79CF00799DA9 /* ViolaoCarta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ViolaoCarta.mp3; sourceTree = "<group>"; };
 		8BD83038292D79CF00799DA9 /* FlautaCarta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FlautaCarta.mp3; sourceTree = "<group>"; };
 		8BD83039292D79CF00799DA9 /* Countdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Countdown.mp3; sourceTree = "<group>"; };
 		8BD83045292D7A3400799DA9 /* BarataMusica.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BarataMusica.mp3; sourceTree = "<group>"; };
@@ -241,7 +241,7 @@
 				8BD83034292D79CF00799DA9 /* PandeiroCarta.mp3 */,
 				8BD83035292D79CF00799DA9 /* PianoCarta.mp3 */,
 				8BD83036292D79CF00799DA9 /* SaxofoneCarta.mp3 */,
-				8BD83037292D79CF00799DA9 /* ViolãoCarta.mp3 */,
+				8BD83037292D79CF00799DA9 /* ViolaoCarta.mp3 */,
 			);
 			path = Cartas;
 			sourceTree = "<group>";
@@ -511,7 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BD8303B292D79CF00799DA9 /* PandeiroCarta.mp3 in Resources */,
-				8BD8303E292D79CF00799DA9 /* ViolãoCarta.mp3 in Resources */,
+				8BD8303E292D79CF00799DA9 /* ViolaoCarta.mp3 in Resources */,
 				8BD83011292D795C00799DA9 /* Preview Assets.xcassets in Resources */,
 				8BD83049292D7A3400799DA9 /* AranhaMusica.mp3 in Resources */,
 				8BD8303A292D79CF00799DA9 /* ChocalhoCarta.mp3 in Resources */,
@@ -543,7 +543,7 @@
 				8BD83099292D7D0200799DA9 /* Aranha-Pandeiro.mp3 in Resources */,
 				8BD8309E292D7D0200799DA9 /* Barata-Saxofone.mp3 in Resources */,
 				8BD83094292D7D0200799DA9 /* Aranha-Piano.mp3 in Resources */,
-				8BD830A6292D7D2100799DA9 /* ViolãoCarta.mp3 in Resources */,
+				8BD830A6292D7D2100799DA9 /* ViolaoCarta.mp3 in Resources */,
 				8BD83090292D7D0200799DA9 /* Borboleta-Pandeiro.mp3 in Resources */,
 				8BD83023292D795D00799DA9 /* Preview Assets.xcassets in Resources */,
 				8BD8309A292D7D0200799DA9 /* Barata-Pandeiro.mp3 in Resources */,
