@@ -69,7 +69,8 @@ struct ChallengeWatchView: View {
                         
                         if attitude.pitch <= -1 && estado == true && control == true {
                             estado = false
-                            audioManager.playSound(sound: currentInstrument.name)
+                            audioManager.playSound(sound: "\(currentInstrument.image)Carta")
+                            print(progress)
                             progress += 1/10
                             
                         }
@@ -80,9 +81,9 @@ struct ChallengeWatchView: View {
                             control = false
                         }
                         
-                        print("pitch: \(attitude.pitch)")
-                        print("yaw: \(attitude.yaw)")
-                        print("roll: \(attitude.roll)")
+//                        print("pitch: \(attitude.pitch)")
+//                        print("yaw: \(attitude.yaw)")
+//                        print("roll: \(attitude.roll)")
                         
                         if !estado {
                             DispatchQueue.main.async {
@@ -108,7 +109,7 @@ struct ChallengeWatchView: View {
                         
                         if attitude.yaw <= -0.4 && attitude.yaw > -0.6 && estado == true && control == true {
                             estado = false
-                            audioManager.playSound(sound: currentInstrument.name)
+                            audioManager.playSound(sound: "\(currentInstrument.image)Carta")
                             progress += 1/10
                             
                         }
@@ -119,9 +120,9 @@ struct ChallengeWatchView: View {
                             control = false
                         }
                         
-                        print("pitch: \(attitude.pitch)")
-                        print("yaw: \(attitude.yaw)")
-                        print("roll: \(attitude.roll)")
+//                        print("pitch: \(attitude.pitch)")
+//                        print("yaw: \(attitude.yaw)")
+//                        print("roll: \(attitude.roll)")
                         
                         if !estado {
                             DispatchQueue.main.async {
@@ -148,7 +149,7 @@ struct ChallengeWatchView: View {
                         
                         if attitude.roll <= -1 && estado == true && control == true {
                             estado = false
-                            audioManager.playSound(sound: currentInstrument.name)
+                            audioManager.playSound(sound: "\(currentInstrument.image)Carta")
                             progress += 1/10
                             
                         }
@@ -159,9 +160,9 @@ struct ChallengeWatchView: View {
                             control = false
                         }
                         
-                        print("pitch: \(attitude.pitch)")
-                        print("yaw: \(attitude.yaw)")
-                        print("roll: \(attitude.roll)")
+//                        print("pitch: \(attitude.pitch)")
+//                        print("yaw: \(attitude.yaw)")
+//                        print("roll: \(attitude.roll)")
                         
                         if !estado {
                             DispatchQueue.main.async {
