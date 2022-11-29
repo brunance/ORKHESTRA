@@ -15,7 +15,7 @@ final class Counter: ObservableObject {
     let delegate: WCSessionDelegate
     let subject = PassthroughSubject<[Int], Never>()
     
-    @Published private(set) var count: [Int] = [0,0]
+    @Published private(set) var count: [Int] = [0,0,0]
     
     init(session: WCSession = .default) {
         self.delegate = SessionDelegater(countSubject: subject)
@@ -33,6 +33,7 @@ final class Counter: ObservableObject {
         
         count[0] = historyId
         count[1] = instrumentId
+        count[2] = 1
         session.sendMessage(["count": count], replyHandler: nil) { error in
             print(error.localizedDescription)
         }

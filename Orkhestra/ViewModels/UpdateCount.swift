@@ -9,6 +9,6 @@ import Foundation
 func updateCount(historyId:Int, instrumentsId: Int){
     
     historyList[historyId].lisfOfInstruments[instrumentsId].unlock = true
-    print(historyList[historyId].lisfOfInstruments[instrumentsId].unlock)
+  
     
 }

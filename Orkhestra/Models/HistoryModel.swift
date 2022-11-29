@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+
 struct HistoryModel: Identifiable, Hashable {
     var id: Int
     var name: String

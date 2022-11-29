@@ -36,12 +36,12 @@ struct SheetView: View {
                     }
                     .padding(.init(top: 0, leading: 20, bottom: 4, trailing: 20))
 
-                    if(historyList[0].lisfOfInstruments[0].unlock == true){
-                        Text("30s | Música, Instrumental")
+                  
+                    Text("30s | Música, Instrumental")
                             .font(.system(size: 12))
                             .foregroundColor(Color("TitleHistory"))
                             .padding(.init(top: 0, leading: 103, bottom: 20, trailing: 101))
-                    }
+                    
 
                     Text("**\(currentHistory.description)**")
                         .multilineTextAlignment(.leading)
@@ -66,7 +66,7 @@ struct SheetView: View {
 
                             HStack(spacing: 12) {
                                 VStack {
-                                    Image(currentHistory.lisfOfInstruments[0].unlock ? "Pandeiro" : "PandeiroSilhueta")
+                                    Image(currentHistory.lisfOfInstruments[2].unlock ? "Pandeiro" : "PandeiroSilhueta")
                                         .resizable()
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Pandeiro")
@@ -75,7 +75,7 @@ struct SheetView: View {
                                         .bold()
                                 }
                                 VStack {
-                                    Image("Chocalho")
+                                    Image(currentHistory.lisfOfInstruments[0].unlock ? "Chocalho" : "ChocalhoSilhueta")
                                         .resizable()
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Chocalho")
@@ -84,7 +84,7 @@ struct SheetView: View {
                                         .bold()
                                 }
                                 VStack {
-                                    Image("Flauta")
+                                    Image(currentHistory.lisfOfInstruments[1].unlock ? "Flauta" : "FlautaSilhueta")
                                         .resizable()
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Flauta")
@@ -93,7 +93,7 @@ struct SheetView: View {
                                         .bold()
                                 }
                                 VStack {
-                                    Image("Saxofone")
+                                    Image(currentHistory.lisfOfInstruments[4].unlock ? "Saxofone" : "SaxofoneSilhueta")
                                         .resizable()
                                         .frame(width: CGFloat(width) + 15, height: CGFloat(width))
                                     Text("Saxofone")
@@ -102,7 +102,7 @@ struct SheetView: View {
                                         .bold()
                                 }
                                 VStack {
-                                    Image("Violao")
+                                    Image(currentHistory.lisfOfInstruments[5].unlock ? "Violao" : "ViolaoSilhueta")
                                         .resizable()
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Violão")
@@ -111,7 +111,7 @@ struct SheetView: View {
                                         .bold()
                                 }
                                 VStack {
-                                    Image("Piano")
+                                    Image(currentHistory.lisfOfInstruments[3].unlock ? "Piano" : "PianoSilhueta")
                                         .resizable()
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Piano")

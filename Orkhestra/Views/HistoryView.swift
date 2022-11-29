@@ -40,11 +40,14 @@ struct HistoryView: View {
                                     .padding(.init(top: -7, leading: 0, bottom: 0, trailing: 0))
                                 ZStack {
                                     Button(action: {
+                                        
                                         showingSheet.toggle()
                                         print(historyList[0].lisfOfInstruments[0].unlock)
                                         updateCount(historyId: counter.count[0], instrumentsId: counter.count[1])
+                                            
                                         
-//                                        print(counter.count)
+                                        
+                                      print(counter.count)
                                         
                                     }, label: {
 
@@ -111,10 +114,6 @@ struct HistoryView: View {
 
                     // swiftlint:disable:next line_length
                     NavigationLink(destination: CountDownView(isGameView: $isGameView).navigationBarBackButtonHidden(true), isActive: $showingCountDown) {}
-                }
-                .onAppear{
-                    print(historyList[0].lisfOfInstruments[1].unlock)
-                   
                 }
             }
         }
