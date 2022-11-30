@@ -55,6 +55,8 @@ struct ChallengeWatchView: View {
               
             }
             .onAppear {
+                progress = 0
+                
                 if(hvm.historyId == 0){
                 
                     self.motionManager.startDeviceMotionUpdates(to: self.queue) { (data: CMDeviceMotion?, error: Error?) in
