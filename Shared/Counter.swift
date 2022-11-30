@@ -47,4 +47,12 @@ final class Counter: ObservableObject {
             print(error.localizedDescription)
         }
     }
+    
+    func decrement() {
+        
+        count[2] = 0
+        session.sendMessage(["count": count], replyHandler: nil) { error in
+            print(error.localizedDescription)
+        }
+    }
 }

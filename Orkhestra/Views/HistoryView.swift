@@ -42,7 +42,9 @@ struct HistoryView: View {
                                 ZStack {
                                     Button(action: {
                                         hvm.historyId = item.id
-                                        updateCount(historyId: counter.count[0], instrumentsId: counter.count[1])
+                                        if(counter.count[2] == 1){
+                                            updateCount(historyId: counter.count[0], instrumentsId: counter.count[1])
+                                        }
                                         showingSheet.toggle()
                                         print(hl.historyList[counter.count[0]].lisfOfInstruments[counter.count[1]].unlock)
                              

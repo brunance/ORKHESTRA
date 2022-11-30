@@ -21,11 +21,7 @@ struct InstrumentsView: View {
                     ForEach(instruments, id: \.self) { instrument in
                         VStack(alignment: .center, spacing: 5) {
                             Text("Escolha!")
-//                                .padding(.top, 5)
-//                                .multilineTextAlignment(.center)
-//                                .lineLimit(nil)
                                 .font(.system(size: 12))
-//                                .frame(maxWidth: .infinity, maxHeight: 90, alignment: .center)
                             
                             Image(instrument.image)
                                 .resizable()
@@ -34,8 +30,6 @@ struct InstrumentsView: View {
 
                             Button(action: {
                                 hvm.instrumentId = instrument.id
-                                counter.increment(historyId: hvm.historyId,instrumentId: hvm.instrumentId)
-                                updateCount(historyId: counter.count[0], instrumentsId: counter.count[1])
                                 print(counter.count)
                                
                         
@@ -54,16 +48,13 @@ struct InstrumentsView: View {
                 }
                 .listStyle(CarouselListStyle())
                 .padding()
+            }.onAppear{
+                counter.decrement()
             }
         }
         .navigationBarTitle(hl.historyList[hvm.historyId].navTitle)
     }
-    func updateCount(historyId:Int, instrumentsId: Int){
-        
-        hl.historyList[historyId].lisfOfInstruments[instrumentsId].unlock = true
-      
-        
-    }
+    
 }
 
 
