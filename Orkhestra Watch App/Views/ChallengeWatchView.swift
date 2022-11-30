@@ -19,6 +19,7 @@ struct ChallengeWatchView: View {
     @State private var pitch = Double.zero
     @State private var yaw = Double.zero
     @State private var roll = Double.zero
+    @StateObject var counter = Counter()
     @EnvironmentObject var audioManager: AudioManagerWatch
 //    @StateObject var counter = Counter()
     var body: some View {
@@ -54,6 +55,8 @@ struct ChallengeWatchView: View {
               
             }
             .onAppear {
+                progress = 0
+                
                 if(hvm.historyId == 0){
                 
                     self.motionManager.startDeviceMotionUpdates(to: self.queue) { (data: CMDeviceMotion?, error: Error?) in
@@ -75,7 +78,7 @@ struct ChallengeWatchView: View {
                         }
                         
                         if(progress >= 0.9){
-//                            counter.increment()
+                            counter.increment(historyId: hvm.historyId,instrumentId: hvm.instrumentId)
                             victory = true
                             control = false
                         }
@@ -114,7 +117,7 @@ struct ChallengeWatchView: View {
                         }
                         
                         if(progress >= 0.9){
-//                            counter.increment()
+                            counter.increment(historyId: hvm.historyId,instrumentId: hvm.instrumentId)
                             victory = true
                             control = false
                         }
@@ -154,7 +157,7 @@ struct ChallengeWatchView: View {
                         }
                         
                         if(progress >= 0.9){
-//                            counter.increment()
+                            counter.increment(historyId: hvm.historyId,instrumentId: hvm.instrumentId)
                             victory = true
                             control = false
                         }

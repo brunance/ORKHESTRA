@@ -48,12 +48,6 @@ struct SheetView: View {
                         .font(.system(size: 16))
                         .foregroundColor(Color.titleSheet)
                         .lineSpacing(1)
-
-                    Text("\(counter.count[0])")
-                    Text("\(counter.count[1])")
-                        .font(.custom("RubikBubbles-Regular", size: 16))
-                        .foregroundColor(Color.titleInstrumentos)
-                        .bold()
                         .padding(.init(top: 20, leading: 16, bottom: 0, trailing: 16))
 
                     VStack {
