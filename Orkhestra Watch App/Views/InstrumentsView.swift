@@ -11,7 +11,7 @@ struct InstrumentsView: View {
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
     @ObservedObject var hl: HistoryList = HistoryList.shared
 
-//    @StateObject var counter = Counter()
+    @StateObject var counter = Counter()
     
     var body: some View {
         let instruments = hl.historyList[hvm.historyId].lisfOfInstruments
