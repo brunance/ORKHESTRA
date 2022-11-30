@@ -745,17 +745,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Orkhestra Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = FJ6C8YTY7V;
+				DEVELOPMENT_TEAM = YP9Q3ST2DG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.OrkhestraApp;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.OrkhestraApp.iphone;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp.watchapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp.iphone.watch;
 				PRODUCT_NAME = orkhestra;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -774,17 +774,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Orkhestra Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = FJ6C8YTY7V;
+				DEVELOPMENT_TEAM = YP9Q3ST2DG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.OrkhestraApp;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.OrkhestraApp.iphone;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp.watchapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp.iphone.watch;
 				PRODUCT_NAME = orkhestra;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -805,7 +805,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Orkhestra/Preview Content\"";
-				DEVELOPMENT_TEAM = FJ6C8YTY7V;
+				DEVELOPMENT_TEAM = YP9Q3ST2DG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Orkhestra/Info.plist;
@@ -822,7 +822,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp.iphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -843,7 +843,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Orkhestra/Preview Content\"";
-				DEVELOPMENT_TEAM = FJ6C8YTY7V;
+				DEVELOPMENT_TEAM = YP9Q3ST2DG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Orkhestra/Info.plist;
@@ -860,7 +860,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp.iphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

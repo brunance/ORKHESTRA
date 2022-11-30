@@ -35,7 +35,7 @@ struct ChallengeWatchView: View {
                 Spacer()
 
                 ZStack {
-                    NavigationLink(destination: PlayOrkhestraView(), isActive: $victory) {}
+                    NavigationLink(destination: PlayOrkhestraView().navigationBarBackButtonHidden(), isActive: $victory) {}
 
                     CircularProgressView(progress: progress, strokeLine: 7)
 
