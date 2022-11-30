@@ -77,6 +77,9 @@
 		8BD830AA292D7D9E00799DA9 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD830A8292D7D9E00799DA9 /* Counter.swift */; };
 		8BD830AC292D7DB600799DA9 /* WatchConnecivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD830AB292D7DB600799DA9 /* WatchConnecivity.swift */; };
 		8BD830AD292D7DB600799DA9 /* WatchConnecivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD830AB292D7DB600799DA9 /* WatchConnecivity.swift */; };
+		9C3410B72937821D000A57EF /* HistoryModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3410B62937821D000A57EF /* HistoryModel2.swift */; };
+		9C7BF7FB2934F6C4004CB79F /* UpdateCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7BF7FA2934F6C4004CB79F /* UpdateCount.swift */; };
+		9C7BF7FC2934F6C4004CB79F /* UpdateCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7BF7FA2934F6C4004CB79F /* UpdateCount.swift */; };
 		9CC09645292D8A5F00DCCCE1 /* RubikBubbles-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CC09644292D8A5F00DCCCE1 /* RubikBubbles-Regular.ttf */; };
 /* End PBXBuildFile section */
 
@@ -164,6 +167,8 @@
 		8BD8308D292D7D0200799DA9 /* Barata-Piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Barata-Piano.mp3"; sourceTree = "<group>"; };
 		8BD830A8292D7D9E00799DA9 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		8BD830AB292D7DB600799DA9 /* WatchConnecivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnecivity.swift; sourceTree = "<group>"; };
+		9C3410B62937821D000A57EF /* HistoryModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel2.swift; sourceTree = "<group>"; };
+		9C7BF7FA2934F6C4004CB79F /* UpdateCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCount.swift; sourceTree = "<group>"; };
 		9CC09640292D899A00DCCCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9CC09644292D8A5F00DCCCE1 /* RubikBubbles-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RubikBubbles-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -388,6 +393,7 @@
 			children = (
 				8BD8305E292D7AF300799DA9 /* HistoryViewModel.swift */,
 				8BD83060292D7B0800799DA9 /* GameViewModel.swift */,
+				9C7BF7FA2934F6C4004CB79F /* UpdateCount.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				8BD83065292D7C4000799DA9 /* HistoryViewModel.swift */,
+				9C3410B62937821D000A57EF /* HistoryModel2.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -581,6 +588,7 @@
 				8BD83054292D7A9600799DA9 /* SheetView.swift in Sources */,
 				8BD8304D292D7A5000799DA9 /* CardModel.swift in Sources */,
 				8B80493F292FB06D005E6CF0 /* InstrumentModel.swift in Sources */,
+				9C7BF7FB2934F6C4004CB79F /* UpdateCount.swift in Sources */,
 				8BD8305F292D7AF300799DA9 /* HistoryViewModel.swift in Sources */,
 				8B804932292F9F6F005E6CF0 /* Color+ColorAssets.swift in Sources */,
 				8BD8305A292D7AC700799DA9 /* CountDownView.swift in Sources */,
@@ -601,6 +609,8 @@
 				8BD830AD292D7DB600799DA9 /* WatchConnecivity.swift in Sources */,
 				8B804933292F9F6F005E6CF0 /* Color+ColorAssets.swift in Sources */,
 				8BD83063292D7C1F00799DA9 /* AudioManagerWatch.swift in Sources */,
+				9C7BF7FC2934F6C4004CB79F /* UpdateCount.swift in Sources */,
+				9C3410B72937821D000A57EF /* HistoryModel2.swift in Sources */,
 				8BD8301C292D795C00799DA9 /* OrkhestraApp.swift in Sources */,
 				8BD83072292D7CAC00799DA9 /* MenuViewWatchApp.swift in Sources */,
 				8BD83066292D7C4000799DA9 /* HistoryViewModel.swift in Sources */,

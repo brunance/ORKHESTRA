@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GameView: View {
+    
     private var threeColumnGrid = [GridItem(.flexible()),
                                    GridItem(.flexible()),
                                    GridItem(.flexible())]
@@ -20,7 +21,7 @@ struct GameView: View {
                                  GridItem(.flexible())]
 
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
-
+    @ObservedObject var hl: HistoryList = HistoryList.shared
     @State var cards = createCardList().shuffled()
     @State var matchedCards = [CardModel]()
     @State var userChoices = [CardModel]()
@@ -35,7 +36,7 @@ struct GameView: View {
 
     var body: some View {
 
-        let currentHistory = historyList[hvm.historyId]
+        let currentHistory = hl.historyList[hvm.historyId]
 
         if matchedCards.count == cards.count {
             CountDownView(isGameView: $isGameView)

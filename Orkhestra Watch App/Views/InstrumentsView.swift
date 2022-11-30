@@ -9,12 +9,12 @@ import SwiftUI
 struct InstrumentsView: View {
 
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
-    
+    @ObservedObject var hl: HistoryList = HistoryList.shared
 
-//    @StateObject var counter = Counter()
+    @StateObject var counter = Counter()
     
     var body: some View {
-        let instruments = historyList[hvm.historyId].lisfOfInstruments
+        let instruments = hl.historyList[hvm.historyId].lisfOfInstruments
         NavigationView {
             VStack {
                 List {
@@ -34,6 +34,9 @@ struct InstrumentsView: View {
 
                             Button(action: {
                                 hvm.instrumentId = instrument.id
+                                counter.increment(historyId: hvm.historyId,instrumentId: hvm.instrumentId)
+                                updateCount(historyId: counter.count[0], instrumentsId: counter.count[1])
+                                print(counter.count)
                                
                         
                             }, label: {})
@@ -53,6 +56,14 @@ struct InstrumentsView: View {
                 .padding()
             }
         }
-        .navigationBarTitle(historyList[hvm.historyId].navTitle)
+        .navigationBarTitle(hl.historyList[hvm.historyId].navTitle)
+    }
+    func updateCount(historyId:Int, instrumentsId: Int){
+        
+        hl.historyList[historyId].lisfOfInstruments[instrumentsId].unlock = true
+      
+        
     }
 }
+
+

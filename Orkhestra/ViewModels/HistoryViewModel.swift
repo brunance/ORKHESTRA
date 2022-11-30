@@ -12,4 +12,5 @@ class HistoryViewModel: ObservableObject {
     public static var shared: HistoryViewModel = HistoryViewModel()
 
     @Published var historyId: Int = 0
+    @Published var instrumentsId: Int = 0
 }

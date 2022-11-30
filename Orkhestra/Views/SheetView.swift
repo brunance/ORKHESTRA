@@ -11,12 +11,13 @@ import SwiftUI
 struct SheetView: View {
     @Environment(\.dismiss) var dismiss
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
-
+    @StateObject var counter = Counter.shared
+    @ObservedObject var hl: HistoryList = HistoryList.shared
     let width: Int = 35
     let height: Int = 10
 
     var body: some View {
-        let currentHistory = historyList[hvm.historyId]
+        let currentHistory = hl.historyList[hvm.historyId]
 
         ZStack {
             Color.backSheet.ignoresSafeArea()
@@ -35,6 +36,7 @@ struct SheetView: View {
                     }
                     .padding(.init(top: 0, leading: 20, bottom: 4, trailing: 20))
 
+                  
                     Text("30s | Música, Instrumental")
                         .font(.system(size: 12))
                         .foregroundColor(Color.titleHistory)
@@ -47,7 +49,8 @@ struct SheetView: View {
                         .foregroundColor(Color.titleSheet)
                         .lineSpacing(1)
 
-                    Text("INSTRUMENTOS DISPONÍVEIS")
+                    Text("\(counter.count[0])")
+                    Text("\(counter.count[1])")
                         .font(.custom("RubikBubbles-Regular", size: 16))
                         .foregroundColor(Color.titleInstrumentos)
                         .bold()
@@ -62,7 +65,7 @@ struct SheetView: View {
 
                             HStack(spacing: 12) {
                                 VStack {
-                                    Image("Pandeiro")
+                                    Image(currentHistory.lisfOfInstruments[2].unlock ? "Pandeiro" : "PandeiroSilhueta")
                                         .resizable()
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Pandeiro")
@@ -71,7 +74,7 @@ struct SheetView: View {
                                         .bold()
                                 }
                                 VStack {
-                                    Image("Chocalho")
+                                    Image(currentHistory.lisfOfInstruments[0].unlock ? "Chocalho" : "ChocalhoSilhueta")
                                         .resizable()
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Chocalho")
@@ -80,7 +83,7 @@ struct SheetView: View {
                                         .bold()
                                 }
                                 VStack {
-                                    Image("Flauta")
+                                    Image(currentHistory.lisfOfInstruments[1].unlock ? "Flauta" : "FlautaSilhueta")
                                         .resizable()
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Flauta")
@@ -89,7 +92,7 @@ struct SheetView: View {
                                         .bold()
                                 }
                                 VStack {
-                                    Image("Saxofone")
+                                    Image(currentHistory.lisfOfInstruments[4].unlock ? "Saxofone" : "SaxofoneSilhueta")
                                         .resizable()
                                         .frame(width: CGFloat(width) + 15, height: CGFloat(width))
                                     Text("Saxofone")
@@ -98,7 +101,7 @@ struct SheetView: View {
                                         .bold()
                                 }
                                 VStack {
-                                    Image("Violao")
+                                    Image(currentHistory.lisfOfInstruments[5].unlock ? "Violao" : "ViolaoSilhueta")
                                         .resizable()
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Violão")
@@ -107,7 +110,7 @@ struct SheetView: View {
                                         .bold()
                                 }
                                 VStack {
-                                    Image("Piano")
+                                    Image(currentHistory.lisfOfInstruments[3].unlock ? "Piano" : "PianoSilhueta")
                                         .resizable()
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Piano")
@@ -119,6 +122,7 @@ struct SheetView: View {
                         }
                     }
                 }
+               
                 .padding(.init(top: 0, leading: 16, bottom: 70, trailing: 16))
             }
         }

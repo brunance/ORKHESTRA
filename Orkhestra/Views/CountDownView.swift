@@ -13,14 +13,14 @@ struct CountDownView: View {
 //    @State var timerRunning = true
     @State var scale: CGFloat = 1
     @Binding var isGameView: Bool
-    
-
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @ObservedObject var hl: HistoryList = HistoryList.shared
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
     @EnvironmentObject var audioManager: AudioManager
 
     var body: some View {
 
-        let currentHistory = historyList[hvm.historyId]
+        let currentHistory = hl.historyList[hvm.historyId]
         let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
         
         NavigationView {

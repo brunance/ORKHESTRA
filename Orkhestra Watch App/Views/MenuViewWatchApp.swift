@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MenuViewWatchApp: View {
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
-
+    @ObservedObject var hl: HistoryList = HistoryList.shared
     var body: some View {
         NavigationStack {
             VStack {
@@ -19,7 +19,7 @@ struct MenuViewWatchApp: View {
                     .fontWeight(.bold)
                     .frame(maxWidth: .infinity, alignment: .leading)
 
-                ForEach(historyList, id: \.self) { history in
+                ForEach(hl.historyList, id: \.self) { history in
                     NavigationLink(destination: InstrumentsView()) {
                         ZStack {
                             HStack {

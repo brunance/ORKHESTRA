@@ -12,7 +12,9 @@ struct HistoryView: View {
     @State private var showingCountDown = false
     @State var isGameView = true
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
-    
+    @StateObject var counter = Counter.shared
+    @ObservedObject var hl: HistoryList = HistoryList.shared
+   
 //    @StateObject var counter = Counter()
 
     let columns = [
@@ -26,7 +28,7 @@ struct HistoryView: View {
 
                 VStack {
                     TabView {
-                        ForEach(historyList, id: \.self) { item in
+                        ForEach(hl.historyList, id: \.self) { item in
                             ZStack {
                                 Color.primaria1
                                 Image("\(item.name)Padrao")
@@ -39,10 +41,11 @@ struct HistoryView: View {
                                     .padding(.init(top: -7, leading: 0, bottom: 0, trailing: 0))
                                 ZStack {
                                     Button(action: {
-                                        showingSheet.toggle()
                                         hvm.historyId = item.id
-                                        
-//                                        print(counter.count)
+                                        updateCount(historyId: counter.count[0], instrumentsId: counter.count[1])
+                                        showingSheet.toggle()
+                                        print(hl.historyList[counter.count[0]].lisfOfInstruments[counter.count[1]].unlock)
+                             
                                         
                                     }, label: {
 
@@ -82,8 +85,9 @@ struct HistoryView: View {
                                 .padding(.init(top: 640, leading: 121, bottom: 240, trailing: 119))
                                 VStack {
                                     Button(action: {
-                                        showingCountDown.toggle()
                                         hvm.historyId = item.id
+                                        showingCountDown.toggle()
+                                       
                                     }, label: {
                                         HStack {
                                             Image(systemName: "play.fill")
@@ -112,7 +116,15 @@ struct HistoryView: View {
             }
         }
     }
+    func updateCount(historyId:Int, instrumentsId: Int){
+        
+        hl.historyList[historyId].lisfOfInstruments[instrumentsId].unlock = true
+      
+        
+    }
 }
+
+
 
 struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {
