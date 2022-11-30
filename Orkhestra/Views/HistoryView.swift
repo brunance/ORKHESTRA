@@ -12,8 +12,9 @@ struct HistoryView: View {
     @State private var showingCountDown = false
     @State var isGameView = true
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
-    @StateObject var counter = Counter()
-    
+    @StateObject var counter = Counter.shared
+    @ObservedObject var hl: HistoryList = HistoryList.shared
+   
 //    @StateObject var counter = Counter()
 
     let columns = [
@@ -27,7 +28,7 @@ struct HistoryView: View {
 
                 VStack {
                     TabView {
-                        ForEach(historyList, id: \.self) { item in
+                        ForEach(hl.historyList, id: \.self) { item in
                             ZStack {
                                 Color("Primaria1")
                                 Image("\(item.name)Padrao")
@@ -40,14 +41,11 @@ struct HistoryView: View {
                                     .padding(.init(top: -7, leading: 0, bottom: 0, trailing: 0))
                                 ZStack {
                                     Button(action: {
-                                        
-                                        showingSheet.toggle()
-                                        print(historyList[0].lisfOfInstruments[0].unlock)
+                                        hvm.historyId = item.id
                                         updateCount(historyId: counter.count[0], instrumentsId: counter.count[1])
-                                            
-                                        
-                                        
-                                      print(counter.count)
+                                        showingSheet.toggle()
+                                        print(hl.historyList[counter.count[0]].lisfOfInstruments[counter.count[1]].unlock)
+                             
                                         
                                     }, label: {
 
@@ -117,6 +115,12 @@ struct HistoryView: View {
                 }
             }
         }
+    }
+    func updateCount(historyId:Int, instrumentsId: Int){
+        
+        hl.historyList[historyId].lisfOfInstruments[instrumentsId].unlock = true
+      
+        
     }
 }
 

@@ -6,9 +6,10 @@
 //
 
 import Foundation
-func updateCount(historyId:Int, instrumentsId: Int){
-    
-    historyList[historyId].lisfOfInstruments[instrumentsId].unlock = true
-  
-    
-}
+
+//func updateCount(historyId:Int, instrumentsId: Int){
+//    
+//    hl.historyList[historyId].lisfOfInstruments[instrumentsId].unlock = true
+//  
+//    
+//}

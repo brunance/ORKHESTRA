@@ -27,7 +27,7 @@ struct ChallengeWatchView: View {
 //                                    .first(where: {
 //                                        $0.id == hvm.instrumentId
 //                                    })
-        let currentInstrument = historyList[hvm.historyId]
+        let currentInstrument = historyListWatch[hvm.historyId]
             .lisfOfInstruments[hvm.instrumentId]
 
         NavigationView {

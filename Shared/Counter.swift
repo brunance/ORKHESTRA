@@ -15,6 +15,9 @@ final class Counter: ObservableObject {
     let delegate: WCSessionDelegate
     let subject = PassthroughSubject<[Int], Never>()
     
+    public static let shared = Counter()
+
+    
     @Published private(set) var count: [Int] = [0,0,0]
     
     init(session: WCSession = .default) {

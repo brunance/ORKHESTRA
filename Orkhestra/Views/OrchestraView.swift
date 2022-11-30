@@ -13,13 +13,14 @@ struct OrchestraView: View {
     @State private var value: Double = 0.0
     @State private var isEditing: Bool = false
     @EnvironmentObject var audioManager: AudioManager
+    @ObservedObject var hl: HistoryList = HistoryList.shared
 
     let timer = Timer
         .publish(every: 0.5, on: .main, in: .common)
         .autoconnect()
 
     var body: some View {
-        let currentHistory = historyList[hvm.historyId]
+        let currentHistory = hl.historyList[hvm.historyId]
 
         NavigationView {
             ZStack {

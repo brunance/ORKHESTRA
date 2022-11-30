@@ -11,6 +11,7 @@ struct PlayOrkhestraView: View {
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
     @State var progress: Double = 0
     @EnvironmentObject var audioManager: AudioManagerWatch
+    @ObservedObject var hl: HistoryList = HistoryList.shared
     @State var isPlaying: Bool = true
 
     let timer = Timer
@@ -23,7 +24,7 @@ struct PlayOrkhestraView: View {
 //                                    .first(where: {
 //                                        $0.id == hvm.instrumentId
 //                                    })
-        let currentHistory = historyList[hvm.historyId]
+        let currentHistory = hl.historyList[hvm.historyId]
         let currentInstrument = currentHistory.lisfOfInstruments[hvm.instrumentId]
 
         NavigationView {
@@ -37,7 +38,7 @@ struct PlayOrkhestraView: View {
                 }
                 .frame(width: 50, height: 50)
                 
-                Text(historyList[hvm.historyId].title)
+                Text(hl.historyList[hvm.historyId].title)
                     .font(.system(size: 15))
                 
                 Text("\(currentInstrument.name) Instrumental")
