@@ -20,7 +20,7 @@ struct SheetView: View {
         let currentHistory = hl.historyList[hvm.historyId]
 
         ZStack {
-            Color("BackSheet").ignoresSafeArea()
+            Color.backSheet.ignoresSafeArea()
             VStack {
                 VStack {
                     Image("\(currentHistory.name)Modal")
@@ -30,7 +30,7 @@ struct SheetView: View {
                         ForEach(0...currentHistory.titleList.count - 1, id: \.self) { num in
                             Text(currentHistory.titleList[num])
                                 .font(.custom("RubikBubbles-Regular", size: CGFloat(currentHistory.sizeTitleList[num])))
-                                .foregroundColor(Color("TitleSheet"))
+                                .foregroundColor(Color.titleSheet)
                                 .bold()
                         }
                     }
@@ -38,29 +38,28 @@ struct SheetView: View {
 
                   
                     Text("30s | Música, Instrumental")
-                            .font(.system(size: 12))
-                            .foregroundColor(Color("TitleHistory"))
-                            .padding(.init(top: 0, leading: 103, bottom: 20, trailing: 101))
-                    
+                        .font(.system(size: 12))
+                        .foregroundColor(Color.titleHistory)
+                        .padding(.init(top: 0, leading: 103, bottom: 20, trailing: 101))
 
                     Text("**\(currentHistory.description)**")
                         .multilineTextAlignment(.leading)
                         .lineLimit(nil)
                         .font(.system(size: 16))
-                        .foregroundColor(Color("TitleSheet"))
+                        .foregroundColor(Color.titleSheet)
                         .lineSpacing(1)
 
                     Text("\(counter.count[0])")
                     Text("\(counter.count[1])")
                         .font(.custom("RubikBubbles-Regular", size: 16))
-                        .foregroundColor(Color("TitleInstrumentos"))
+                        .foregroundColor(Color.titleInstrumentos)
                         .bold()
                         .padding(.init(top: 20, leading: 16, bottom: 0, trailing: 16))
 
                     VStack {
                         ZStack {
                             RoundedRectangle(cornerRadius: 8, style: .continuous)
-                                .foregroundColor(Color("TitleHistory"))
+                                .foregroundColor(Color.titleHistory)
                                 .frame(width: 350, height: 60)
                                 .padding(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
 
@@ -71,7 +70,7 @@ struct SheetView: View {
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Pandeiro")
                                         .font(.system(size: 12))
-                                        .foregroundColor(Color("CombinarText"))
+                                        .foregroundColor(Color.combinarText)
                                         .bold()
                                 }
                                 VStack {
@@ -80,7 +79,7 @@ struct SheetView: View {
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Chocalho")
                                         .font(.system(size: 12))
-                                        .foregroundColor(Color("CombinarText"))
+                                        .foregroundColor(Color.combinarText)
                                         .bold()
                                 }
                                 VStack {
@@ -89,7 +88,7 @@ struct SheetView: View {
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Flauta")
                                         .font(.system(size: 12))
-                                        .foregroundColor(Color("CombinarText"))
+                                        .foregroundColor(Color.combinarText)
                                         .bold()
                                 }
                                 VStack {
@@ -98,7 +97,7 @@ struct SheetView: View {
                                         .frame(width: CGFloat(width) + 15, height: CGFloat(width))
                                     Text("Saxofone")
                                         .font(.system(size: 12))
-                                        .foregroundColor(Color("CombinarText"))
+                                        .foregroundColor(Color.combinarText)
                                         .bold()
                                 }
                                 VStack {
@@ -107,7 +106,7 @@ struct SheetView: View {
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Violão")
                                         .font(.system(size: 12))
-                                        .foregroundColor(Color("CombinarText"))
+                                        .foregroundColor(Color.combinarText)
                                         .bold()
                                 }
                                 VStack {
@@ -116,7 +115,7 @@ struct SheetView: View {
                                         .frame(width: CGFloat(width), height: CGFloat(width))
                                     Text("Piano")
                                         .font(.system(size: 12))
-                                        .foregroundColor(Color("CombinarText"))
+                                        .foregroundColor(Color.combinarText)
                                         .bold()
                                 }
                             }

@@ -1,6 +1,12 @@
+////
+////  WatchConnectivity.swift
+////  Challenge05
+////
+////  Created by Ruan Eleutério  on 22/11/22.
+////
 //
-//  WatchConnectivity.swift
-//  Challenge05
+//import Combine
+//import WatchConnectivity
 //
 //  Created by Ruan Eleutério  on 22/11/22.
 //

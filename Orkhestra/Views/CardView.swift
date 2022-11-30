@@ -23,7 +23,7 @@ struct CardView: View {
             ZStack {
                 Rectangle()
                     .frame(width: CGFloat(width), height: CGFloat(width))
-                    .foregroundColor(Color("TitleHistory"))
+                    .foregroundColor(Color.titleHistory)
                     .cornerRadius(10)
                 Image("BarataGameCard")
                     .resizable()
@@ -32,7 +32,7 @@ struct CardView: View {
                 Image(card.text)
                     .resizable()
                     .frame(width: CGFloat(width)/1.5, height: CGFloat(width)/1.5)
-                    .background(Color("TitleHistory"))
+                    .background(Color.titleHistory)
                     .cornerRadius(10)
                     .onAppear(perform: {
                         playSoundOfCard(card: card)

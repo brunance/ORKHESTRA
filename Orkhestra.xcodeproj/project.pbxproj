@@ -15,7 +15,7 @@
 		8BD8300A292D795B00799DA9 /* OrkhestraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD83009292D795B00799DA9 /* OrkhestraApp.swift */; };
 		8BD8300E292D795C00799DA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8300D292D795C00799DA9 /* Assets.xcassets */; };
 		8BD83011292D795C00799DA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83010292D795C00799DA9 /* Preview Assets.xcassets */; };
-		8BD83017292D795C00799DA9 /* Orkhestra Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8BD83016292D795C00799DA9 /* Orkhestra Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8BD83017292D795C00799DA9 /* orkhestra.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8BD83016292D795C00799DA9 /* orkhestra.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8BD8301C292D795C00799DA9 /* OrkhestraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8301B292D795C00799DA9 /* OrkhestraApp.swift */; };
 		8BD83020292D795D00799DA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8301F292D795D00799DA9 /* Assets.xcassets */; };
 		8BD83023292D795D00799DA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83022292D795D00799DA9 /* Preview Assets.xcassets */; };
@@ -25,7 +25,7 @@
 		8BD8303B292D79CF00799DA9 /* PandeiroCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83034292D79CF00799DA9 /* PandeiroCarta.mp3 */; };
 		8BD8303C292D79CF00799DA9 /* PianoCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83035292D79CF00799DA9 /* PianoCarta.mp3 */; };
 		8BD8303D292D79CF00799DA9 /* SaxofoneCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83036292D79CF00799DA9 /* SaxofoneCarta.mp3 */; };
-		8BD8303E292D79CF00799DA9 /* ViolãoCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83037292D79CF00799DA9 /* ViolãoCarta.mp3 */; };
+		8BD8303E292D79CF00799DA9 /* ViolaoCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83037292D79CF00799DA9 /* ViolaoCarta.mp3 */; };
 		8BD8303F292D79CF00799DA9 /* FlautaCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83038292D79CF00799DA9 /* FlautaCarta.mp3 */; };
 		8BD83040292D79CF00799DA9 /* Countdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83039292D79CF00799DA9 /* Countdown.mp3 */; };
 		8BD83048292D7A3400799DA9 /* BarataMusica.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83045292D7A3400799DA9 /* BarataMusica.mp3 */; };
@@ -72,7 +72,7 @@
 		8BD830A3292D7D2100799DA9 /* Countdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83039292D79CF00799DA9 /* Countdown.mp3 */; };
 		8BD830A4292D7D2100799DA9 /* FlautaCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83038292D79CF00799DA9 /* FlautaCarta.mp3 */; };
 		8BD830A5292D7D2100799DA9 /* ChocalhoCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83033292D79CF00799DA9 /* ChocalhoCarta.mp3 */; };
-		8BD830A6292D7D2100799DA9 /* ViolãoCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83037292D79CF00799DA9 /* ViolãoCarta.mp3 */; };
+		8BD830A6292D7D2100799DA9 /* ViolaoCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83037292D79CF00799DA9 /* ViolaoCarta.mp3 */; };
 		8BD830A9292D7D9E00799DA9 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD830A8292D7D9E00799DA9 /* Counter.swift */; };
 		8BD830AA292D7D9E00799DA9 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD830A8292D7D9E00799DA9 /* Counter.swift */; };
 		8BD830AC292D7DB600799DA9 /* WatchConnecivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD830AB292D7DB600799DA9 /* WatchConnecivity.swift */; };
@@ -100,7 +100,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				8BD83017292D795C00799DA9 /* Orkhestra Watch App.app in Embed Watch Content */,
+				8BD83017292D795C00799DA9 /* orkhestra.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,7 +114,7 @@
 		8BD83009292D795B00799DA9 /* OrkhestraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrkhestraApp.swift; sourceTree = "<group>"; };
 		8BD8300D292D795C00799DA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BD83010292D795C00799DA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8BD83016292D795C00799DA9 /* Orkhestra Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Orkhestra Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD83016292D795C00799DA9 /* orkhestra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = orkhestra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD8301B292D795C00799DA9 /* OrkhestraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrkhestraApp.swift; sourceTree = "<group>"; };
 		8BD8301F292D795D00799DA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BD83022292D795D00799DA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		8BD83034292D79CF00799DA9 /* PandeiroCarta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PandeiroCarta.mp3; sourceTree = "<group>"; };
 		8BD83035292D79CF00799DA9 /* PianoCarta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PianoCarta.mp3; sourceTree = "<group>"; };
 		8BD83036292D79CF00799DA9 /* SaxofoneCarta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SaxofoneCarta.mp3; sourceTree = "<group>"; };
-		8BD83037292D79CF00799DA9 /* ViolãoCarta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ViolãoCarta.mp3"; sourceTree = "<group>"; };
+		8BD83037292D79CF00799DA9 /* ViolaoCarta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ViolaoCarta.mp3; sourceTree = "<group>"; };
 		8BD83038292D79CF00799DA9 /* FlautaCarta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FlautaCarta.mp3; sourceTree = "<group>"; };
 		8BD83039292D79CF00799DA9 /* Countdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Countdown.mp3; sourceTree = "<group>"; };
 		8BD83045292D7A3400799DA9 /* BarataMusica.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BarataMusica.mp3; sourceTree = "<group>"; };
@@ -246,7 +246,7 @@
 				8BD83034292D79CF00799DA9 /* PandeiroCarta.mp3 */,
 				8BD83035292D79CF00799DA9 /* PianoCarta.mp3 */,
 				8BD83036292D79CF00799DA9 /* SaxofoneCarta.mp3 */,
-				8BD83037292D79CF00799DA9 /* ViolãoCarta.mp3 */,
+				8BD83037292D79CF00799DA9 /* ViolaoCarta.mp3 */,
 			);
 			path = Cartas;
 			sourceTree = "<group>";
@@ -293,7 +293,6 @@
 		8BD82FFD292D795B00799DA9 = {
 			isa = PBXGroup;
 			children = (
-				8B804934292FA785005E6CF0 /* Sound */,
 				8BD830A7292D7D8A00799DA9 /* Shared */,
 				8BD83008292D795B00799DA9 /* Orkhestra */,
 				8BD8301A292D795C00799DA9 /* Orkhestra Watch App */,
@@ -305,7 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				8BD83006292D795B00799DA9 /* Orkhestra.app */,
-				8BD83016292D795C00799DA9 /* Orkhestra Watch App.app */,
+				8BD83016292D795C00799DA9 /* orkhestra.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -313,6 +312,7 @@
 		8BD83008292D795B00799DA9 /* Orkhestra */ = {
 			isa = PBXGroup;
 			children = (
+				8B804934292FA785005E6CF0 /* Sound */,
 				8B804930292F9F47005E6CF0 /* Extensions */,
 				9CC09643292D8A0500DCCCE1 /* Fonts */,
 				9CC09640292D899A00DCCCE1 /* Info.plist */,
@@ -472,7 +472,7 @@
 			);
 			name = "Orkhestra Watch App";
 			productName = "Orkhestra Watch App";
-			productReference = 8BD83016292D795C00799DA9 /* Orkhestra Watch App.app */;
+			productReference = 8BD83016292D795C00799DA9 /* orkhestra.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -518,7 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BD8303B292D79CF00799DA9 /* PandeiroCarta.mp3 in Resources */,
-				8BD8303E292D79CF00799DA9 /* ViolãoCarta.mp3 in Resources */,
+				8BD8303E292D79CF00799DA9 /* ViolaoCarta.mp3 in Resources */,
 				8BD83011292D795C00799DA9 /* Preview Assets.xcassets in Resources */,
 				8BD83049292D7A3400799DA9 /* AranhaMusica.mp3 in Resources */,
 				8BD8303A292D79CF00799DA9 /* ChocalhoCarta.mp3 in Resources */,
@@ -550,7 +550,7 @@
 				8BD83099292D7D0200799DA9 /* Aranha-Pandeiro.mp3 in Resources */,
 				8BD8309E292D7D0200799DA9 /* Barata-Saxofone.mp3 in Resources */,
 				8BD83094292D7D0200799DA9 /* Aranha-Piano.mp3 in Resources */,
-				8BD830A6292D7D2100799DA9 /* ViolãoCarta.mp3 in Resources */,
+				8BD830A6292D7D2100799DA9 /* ViolaoCarta.mp3 in Resources */,
 				8BD83090292D7D0200799DA9 /* Borboleta-Pandeiro.mp3 in Resources */,
 				8BD83023292D795D00799DA9 /* Preview Assets.xcassets in Resources */,
 				8BD8309A292D7D0200799DA9 /* Barata-Pandeiro.mp3 in Resources */,
@@ -748,16 +748,15 @@
 				DEVELOPMENT_TEAM = FJ6C8YTY7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Orkhestra;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.OrkhestraApp;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp.watchapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = orkhestra;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -778,16 +777,15 @@
 				DEVELOPMENT_TEAM = FJ6C8YTY7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Orkhestra;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.OrkhestraApp;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp.watchapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = orkhestra;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -805,13 +803,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Orkhestra/Preview Content\"";
 				DEVELOPMENT_TEAM = FJ6C8YTY7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Orkhestra/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Orkhestra;
+				INFOPLIST_KEY_CFBundleDisplayName = orkhestra;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -823,7 +821,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -843,13 +841,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Orkhestra/Preview Content\"";
 				DEVELOPMENT_TEAM = FJ6C8YTY7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Orkhestra/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Orkhestra;
+				INFOPLIST_KEY_CFBundleDisplayName = orkhestra;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -861,7 +859,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;

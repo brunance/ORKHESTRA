@@ -69,7 +69,7 @@ struct ChallengeWatchView: View {
                         
                         if attitude.pitch <= -1 && estado == true && control == true {
                             estado = false
-                            audioManager.playSound(sound: currentInstrument.name)
+                            audioManager.playSound(sound: "\(currentInstrument.image)Carta")
                             progress += 1/10
                             
                         }
@@ -108,7 +108,7 @@ struct ChallengeWatchView: View {
                         
                         if attitude.yaw <= -0.4 && attitude.yaw > -0.6 && estado == true && control == true {
                             estado = false
-                            audioManager.playSound(sound: currentInstrument.name)
+                            audioManager.playSound(sound: "\(currentInstrument.image)Carta")
                             progress += 1/10
                             
                         }
@@ -148,7 +148,7 @@ struct ChallengeWatchView: View {
                         
                         if attitude.roll <= -1 && estado == true && control == true {
                             estado = false
-                            audioManager.playSound(sound: currentInstrument.name)
+                            audioManager.playSound(sound: "\(currentInstrument.image)Carta")
                             progress += 1/10
                             
                         }

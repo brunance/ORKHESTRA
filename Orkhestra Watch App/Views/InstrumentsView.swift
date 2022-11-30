@@ -11,7 +11,7 @@ struct InstrumentsView: View {
     @ObservedObject var hvm: HistoryViewModel = HistoryViewModel.shared
     @ObservedObject var hl: HistoryList = HistoryList.shared
 
-    @StateObject var counter = Counter()
+//    @StateObject var counter = Counter()
     
     var body: some View {
         let instruments = hl.historyList[hvm.historyId].lisfOfInstruments
@@ -43,11 +43,10 @@ struct InstrumentsView: View {
 
                             NavigationLink(destination: ChallengeWatchView()) {
                                 Text(instrument.name)
+                                    .foregroundColor(Color("Destaque1"))
                                     .font(.system(size: 14))
                                     .bold()
                             }
-                            .foregroundColor(Color("Destaque1"))
-//                            .padding(.bottom, 5)
                         }
                         .frame(maxWidth: .infinity, maxHeight: 85, alignment: .center)
                         .padding()
