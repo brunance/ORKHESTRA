@@ -1,19 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "BorboletaWatchOS.svg",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "BorboletaWatchOS 1.svg",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "BorboletaWatchOS 2.svg",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "borboleta.svg",
+      "idiom" : "universal"
     }
   ],
   "info" : {
