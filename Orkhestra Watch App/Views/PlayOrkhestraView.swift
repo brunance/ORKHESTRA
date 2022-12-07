@@ -65,7 +65,7 @@ struct PlayOrkhestraView: View {
                 }
             }
             .onAppear {
-                audioManager.playSound(sound: "\(currentHistory.name)-\(currentInstrument.image)")
+                audioManager.playSound(sound: currentHistory.name+currentInstrument.image)
             }
             .onDisappear {
                 audioManager.stopSound()

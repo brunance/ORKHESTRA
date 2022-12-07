@@ -48,24 +48,24 @@
 		8BD8306D292D7C7F00799DA9 /* PlayOrkhestraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8306C292D7C7F00799DA9 /* PlayOrkhestraView.swift */; };
 		8BD8306F292D7C9300799DA9 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8306E292D7C9300799DA9 /* CircularProgressView.swift */; };
 		8BD83072292D7CAC00799DA9 /* MenuViewWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD83071292D7CAC00799DA9 /* MenuViewWatchApp.swift */; };
-		8BD8308E292D7D0200799DA9 /* Borboleta-Flauta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8307A292D7D0200799DA9 /* Borboleta-Flauta.mp3 */; };
-		8BD8308F292D7D0200799DA9 /* Borboleta-Piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8307B292D7D0200799DA9 /* Borboleta-Piano.mp3 */; };
-		8BD83090292D7D0200799DA9 /* Borboleta-Pandeiro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8307C292D7D0200799DA9 /* Borboleta-Pandeiro.mp3 */; };
-		8BD83091292D7D0200799DA9 /* Borboleta-Saxofone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8307D292D7D0200799DA9 /* Borboleta-Saxofone.mp3 */; };
-		8BD83092292D7D0200799DA9 /* Borboleta-Violao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8307E292D7D0200799DA9 /* Borboleta-Violao.mp3 */; };
-		8BD83093292D7D0200799DA9 /* Borboleta-Chocalho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8307F292D7D0200799DA9 /* Borboleta-Chocalho.mp3 */; };
-		8BD83094292D7D0200799DA9 /* Aranha-Piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83081292D7D0200799DA9 /* Aranha-Piano.mp3 */; };
-		8BD83095292D7D0200799DA9 /* Aranha-Flauta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83082292D7D0200799DA9 /* Aranha-Flauta.mp3 */; };
-		8BD83096292D7D0200799DA9 /* Aranha-Chocalho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83083292D7D0200799DA9 /* Aranha-Chocalho.mp3 */; };
-		8BD83097292D7D0200799DA9 /* Aranha-Saxofone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83084292D7D0200799DA9 /* Aranha-Saxofone.mp3 */; };
-		8BD83098292D7D0200799DA9 /* Aranha-Violao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83085292D7D0200799DA9 /* Aranha-Violao.mp3 */; };
-		8BD83099292D7D0200799DA9 /* Aranha-Pandeiro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83086292D7D0200799DA9 /* Aranha-Pandeiro.mp3 */; };
-		8BD8309A292D7D0200799DA9 /* Barata-Pandeiro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83088292D7D0200799DA9 /* Barata-Pandeiro.mp3 */; };
-		8BD8309B292D7D0200799DA9 /* Barata-Flauta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83089292D7D0200799DA9 /* Barata-Flauta.mp3 */; };
-		8BD8309C292D7D0200799DA9 /* Barata-Chocalho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8308A292D7D0200799DA9 /* Barata-Chocalho.mp3 */; };
-		8BD8309D292D7D0200799DA9 /* Barata-Violao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8308B292D7D0200799DA9 /* Barata-Violao.mp3 */; };
-		8BD8309E292D7D0200799DA9 /* Barata-Saxofone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8308C292D7D0200799DA9 /* Barata-Saxofone.mp3 */; };
-		8BD8309F292D7D0200799DA9 /* Barata-Piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8308D292D7D0200799DA9 /* Barata-Piano.mp3 */; };
+		8BD8308E292D7D0200799DA9 /* BorboletaFlauta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8307A292D7D0200799DA9 /* BorboletaFlauta.mp3 */; };
+		8BD8308F292D7D0200799DA9 /* BorboletaPiano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8307B292D7D0200799DA9 /* BorboletaPiano.mp3 */; };
+		8BD83090292D7D0200799DA9 /* BorboletaPandeiro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8307C292D7D0200799DA9 /* BorboletaPandeiro.mp3 */; };
+		8BD83091292D7D0200799DA9 /* BorboletaSaxofone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8307D292D7D0200799DA9 /* BorboletaSaxofone.mp3 */; };
+		8BD83092292D7D0200799DA9 /* BorboletaViolao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8307E292D7D0200799DA9 /* BorboletaViolao.mp3 */; };
+		8BD83093292D7D0200799DA9 /* BorboletaChocalho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8307F292D7D0200799DA9 /* BorboletaChocalho.mp3 */; };
+		8BD83094292D7D0200799DA9 /* AranhaPiano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83081292D7D0200799DA9 /* AranhaPiano.mp3 */; };
+		8BD83095292D7D0200799DA9 /* AranhaFlauta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83082292D7D0200799DA9 /* AranhaFlauta.mp3 */; };
+		8BD83096292D7D0200799DA9 /* AranhaChocalho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83083292D7D0200799DA9 /* AranhaChocalho.mp3 */; };
+		8BD83097292D7D0200799DA9 /* AranhaSaxofone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83084292D7D0200799DA9 /* AranhaSaxofone.mp3 */; };
+		8BD83098292D7D0200799DA9 /* AranhaViolao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83085292D7D0200799DA9 /* AranhaViolao.mp3 */; };
+		8BD83099292D7D0200799DA9 /* AranhaPandeiro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83086292D7D0200799DA9 /* AranhaPandeiro.mp3 */; };
+		8BD8309A292D7D0200799DA9 /* BarataPandeiro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83088292D7D0200799DA9 /* BarataPandeiro.mp3 */; };
+		8BD8309B292D7D0200799DA9 /* BarataFlauta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83089292D7D0200799DA9 /* BarataFlauta.mp3 */; };
+		8BD8309C292D7D0200799DA9 /* BarataChocalho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8308A292D7D0200799DA9 /* BarataChocalho.mp3 */; };
+		8BD8309D292D7D0200799DA9 /* BarataViolao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8308B292D7D0200799DA9 /* BarataViolao.mp3 */; };
+		8BD8309E292D7D0200799DA9 /* BarataSaxofone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8308C292D7D0200799DA9 /* BarataSaxofone.mp3 */; };
+		8BD8309F292D7D0200799DA9 /* BarataPiano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8308D292D7D0200799DA9 /* BarataPiano.mp3 */; };
 		8BD830A0292D7D2100799DA9 /* SaxofoneCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83036292D79CF00799DA9 /* SaxofoneCarta.mp3 */; };
 		8BD830A1292D7D2100799DA9 /* PianoCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83035292D79CF00799DA9 /* PianoCarta.mp3 */; };
 		8BD830A2292D7D2100799DA9 /* PandeiroCarta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD83034292D79CF00799DA9 /* PandeiroCarta.mp3 */; };
@@ -147,24 +147,24 @@
 		8BD8306C292D7C7F00799DA9 /* PlayOrkhestraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayOrkhestraView.swift; sourceTree = "<group>"; };
 		8BD8306E292D7C9300799DA9 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		8BD83071292D7CAC00799DA9 /* MenuViewWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewWatchApp.swift; sourceTree = "<group>"; };
-		8BD8307A292D7D0200799DA9 /* Borboleta-Flauta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Borboleta-Flauta.mp3"; sourceTree = "<group>"; };
-		8BD8307B292D7D0200799DA9 /* Borboleta-Piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Borboleta-Piano.mp3"; sourceTree = "<group>"; };
-		8BD8307C292D7D0200799DA9 /* Borboleta-Pandeiro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Borboleta-Pandeiro.mp3"; sourceTree = "<group>"; };
-		8BD8307D292D7D0200799DA9 /* Borboleta-Saxofone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Borboleta-Saxofone.mp3"; sourceTree = "<group>"; };
-		8BD8307E292D7D0200799DA9 /* Borboleta-Violao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Borboleta-Violao.mp3"; sourceTree = "<group>"; };
-		8BD8307F292D7D0200799DA9 /* Borboleta-Chocalho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Borboleta-Chocalho.mp3"; sourceTree = "<group>"; };
-		8BD83081292D7D0200799DA9 /* Aranha-Piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aranha-Piano.mp3"; sourceTree = "<group>"; };
-		8BD83082292D7D0200799DA9 /* Aranha-Flauta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aranha-Flauta.mp3"; sourceTree = "<group>"; };
-		8BD83083292D7D0200799DA9 /* Aranha-Chocalho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aranha-Chocalho.mp3"; sourceTree = "<group>"; };
-		8BD83084292D7D0200799DA9 /* Aranha-Saxofone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aranha-Saxofone.mp3"; sourceTree = "<group>"; };
-		8BD83085292D7D0200799DA9 /* Aranha-Violao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aranha-Violao.mp3"; sourceTree = "<group>"; };
-		8BD83086292D7D0200799DA9 /* Aranha-Pandeiro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aranha-Pandeiro.mp3"; sourceTree = "<group>"; };
-		8BD83088292D7D0200799DA9 /* Barata-Pandeiro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Barata-Pandeiro.mp3"; sourceTree = "<group>"; };
-		8BD83089292D7D0200799DA9 /* Barata-Flauta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Barata-Flauta.mp3"; sourceTree = "<group>"; };
-		8BD8308A292D7D0200799DA9 /* Barata-Chocalho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Barata-Chocalho.mp3"; sourceTree = "<group>"; };
-		8BD8308B292D7D0200799DA9 /* Barata-Violao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Barata-Violao.mp3"; sourceTree = "<group>"; };
-		8BD8308C292D7D0200799DA9 /* Barata-Saxofone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Barata-Saxofone.mp3"; sourceTree = "<group>"; };
-		8BD8308D292D7D0200799DA9 /* Barata-Piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Barata-Piano.mp3"; sourceTree = "<group>"; };
+		8BD8307A292D7D0200799DA9 /* BorboletaFlauta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BorboletaFlauta.mp3; sourceTree = "<group>"; };
+		8BD8307B292D7D0200799DA9 /* BorboletaPiano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BorboletaPiano.mp3; sourceTree = "<group>"; };
+		8BD8307C292D7D0200799DA9 /* BorboletaPandeiro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BorboletaPandeiro.mp3; sourceTree = "<group>"; };
+		8BD8307D292D7D0200799DA9 /* BorboletaSaxofone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BorboletaSaxofone.mp3; sourceTree = "<group>"; };
+		8BD8307E292D7D0200799DA9 /* BorboletaViolao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BorboletaViolao.mp3; sourceTree = "<group>"; };
+		8BD8307F292D7D0200799DA9 /* BorboletaChocalho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BorboletaChocalho.mp3; sourceTree = "<group>"; };
+		8BD83081292D7D0200799DA9 /* AranhaPiano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AranhaPiano.mp3; sourceTree = "<group>"; };
+		8BD83082292D7D0200799DA9 /* AranhaFlauta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AranhaFlauta.mp3; sourceTree = "<group>"; };
+		8BD83083292D7D0200799DA9 /* AranhaChocalho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AranhaChocalho.mp3; sourceTree = "<group>"; };
+		8BD83084292D7D0200799DA9 /* AranhaSaxofone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AranhaSaxofone.mp3; sourceTree = "<group>"; };
+		8BD83085292D7D0200799DA9 /* AranhaViolao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AranhaViolao.mp3; sourceTree = "<group>"; };
+		8BD83086292D7D0200799DA9 /* AranhaPandeiro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AranhaPandeiro.mp3; sourceTree = "<group>"; };
+		8BD83088292D7D0200799DA9 /* BarataPandeiro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BarataPandeiro.mp3; sourceTree = "<group>"; };
+		8BD83089292D7D0200799DA9 /* BarataFlauta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BarataFlauta.mp3; sourceTree = "<group>"; };
+		8BD8308A292D7D0200799DA9 /* BarataChocalho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BarataChocalho.mp3; sourceTree = "<group>"; };
+		8BD8308B292D7D0200799DA9 /* BarataViolao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BarataViolao.mp3; sourceTree = "<group>"; };
+		8BD8308C292D7D0200799DA9 /* BarataSaxofone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BarataSaxofone.mp3; sourceTree = "<group>"; };
+		8BD8308D292D7D0200799DA9 /* BarataPiano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BarataPiano.mp3; sourceTree = "<group>"; };
 		8BD830A8292D7D9E00799DA9 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		8BD830AB292D7DB600799DA9 /* WatchConnecivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnecivity.swift; sourceTree = "<group>"; };
 		9C3410B62937821D000A57EF /* HistoryModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel2.swift; sourceTree = "<group>"; };
@@ -254,12 +254,12 @@
 		8B804939292FAA17005E6CF0 /* Trilha */ = {
 			isa = PBXGroup;
 			children = (
-				8BD83088292D7D0200799DA9 /* Barata-Pandeiro.mp3 */,
-				8BD83089292D7D0200799DA9 /* Barata-Flauta.mp3 */,
-				8BD8308A292D7D0200799DA9 /* Barata-Chocalho.mp3 */,
-				8BD8308B292D7D0200799DA9 /* Barata-Violao.mp3 */,
-				8BD8308C292D7D0200799DA9 /* Barata-Saxofone.mp3 */,
-				8BD8308D292D7D0200799DA9 /* Barata-Piano.mp3 */,
+				8BD83088292D7D0200799DA9 /* BarataPandeiro.mp3 */,
+				8BD83089292D7D0200799DA9 /* BarataFlauta.mp3 */,
+				8BD8308A292D7D0200799DA9 /* BarataChocalho.mp3 */,
+				8BD8308B292D7D0200799DA9 /* BarataViolao.mp3 */,
+				8BD8308C292D7D0200799DA9 /* BarataSaxofone.mp3 */,
+				8BD8308D292D7D0200799DA9 /* BarataPiano.mp3 */,
 			);
 			path = Trilha;
 			sourceTree = "<group>";
@@ -267,12 +267,12 @@
 		8B80493A292FAA34005E6CF0 /* Trilha */ = {
 			isa = PBXGroup;
 			children = (
-				8BD83081292D7D0200799DA9 /* Aranha-Piano.mp3 */,
-				8BD83082292D7D0200799DA9 /* Aranha-Flauta.mp3 */,
-				8BD83083292D7D0200799DA9 /* Aranha-Chocalho.mp3 */,
-				8BD83084292D7D0200799DA9 /* Aranha-Saxofone.mp3 */,
-				8BD83085292D7D0200799DA9 /* Aranha-Violao.mp3 */,
-				8BD83086292D7D0200799DA9 /* Aranha-Pandeiro.mp3 */,
+				8BD83081292D7D0200799DA9 /* AranhaPiano.mp3 */,
+				8BD83082292D7D0200799DA9 /* AranhaFlauta.mp3 */,
+				8BD83083292D7D0200799DA9 /* AranhaChocalho.mp3 */,
+				8BD83084292D7D0200799DA9 /* AranhaSaxofone.mp3 */,
+				8BD83085292D7D0200799DA9 /* AranhaViolao.mp3 */,
+				8BD83086292D7D0200799DA9 /* AranhaPandeiro.mp3 */,
 			);
 			path = Trilha;
 			sourceTree = "<group>";
@@ -280,12 +280,12 @@
 		8B80493B292FAA3D005E6CF0 /* Trilha */ = {
 			isa = PBXGroup;
 			children = (
-				8BD8307A292D7D0200799DA9 /* Borboleta-Flauta.mp3 */,
-				8BD8307B292D7D0200799DA9 /* Borboleta-Piano.mp3 */,
-				8BD8307C292D7D0200799DA9 /* Borboleta-Pandeiro.mp3 */,
-				8BD8307D292D7D0200799DA9 /* Borboleta-Saxofone.mp3 */,
-				8BD8307E292D7D0200799DA9 /* Borboleta-Violao.mp3 */,
-				8BD8307F292D7D0200799DA9 /* Borboleta-Chocalho.mp3 */,
+				8BD8307A292D7D0200799DA9 /* BorboletaFlauta.mp3 */,
+				8BD8307B292D7D0200799DA9 /* BorboletaPiano.mp3 */,
+				8BD8307C292D7D0200799DA9 /* BorboletaPandeiro.mp3 */,
+				8BD8307D292D7D0200799DA9 /* BorboletaSaxofone.mp3 */,
+				8BD8307E292D7D0200799DA9 /* BorboletaViolao.mp3 */,
+				8BD8307F292D7D0200799DA9 /* BorboletaChocalho.mp3 */,
 			);
 			path = Trilha;
 			sourceTree = "<group>";
@@ -539,31 +539,31 @@
 			files = (
 				8BD830A2292D7D2100799DA9 /* PandeiroCarta.mp3 in Resources */,
 				8BD830A5292D7D2100799DA9 /* ChocalhoCarta.mp3 in Resources */,
-				8BD83091292D7D0200799DA9 /* Borboleta-Saxofone.mp3 in Resources */,
-				8BD8308E292D7D0200799DA9 /* Borboleta-Flauta.mp3 in Resources */,
-				8BD83095292D7D0200799DA9 /* Aranha-Flauta.mp3 in Resources */,
+				8BD83091292D7D0200799DA9 /* BorboletaSaxofone.mp3 in Resources */,
+				8BD8308E292D7D0200799DA9 /* BorboletaFlauta.mp3 in Resources */,
+				8BD83095292D7D0200799DA9 /* AranhaFlauta.mp3 in Resources */,
 				8BD830A3292D7D2100799DA9 /* Countdown.mp3 in Resources */,
-				8BD83096292D7D0200799DA9 /* Aranha-Chocalho.mp3 in Resources */,
-				8BD8309B292D7D0200799DA9 /* Barata-Flauta.mp3 in Resources */,
+				8BD83096292D7D0200799DA9 /* AranhaChocalho.mp3 in Resources */,
+				8BD8309B292D7D0200799DA9 /* BarataFlauta.mp3 in Resources */,
 				8BD830A4292D7D2100799DA9 /* FlautaCarta.mp3 in Resources */,
-				8BD83097292D7D0200799DA9 /* Aranha-Saxofone.mp3 in Resources */,
-				8BD83099292D7D0200799DA9 /* Aranha-Pandeiro.mp3 in Resources */,
-				8BD8309E292D7D0200799DA9 /* Barata-Saxofone.mp3 in Resources */,
-				8BD83094292D7D0200799DA9 /* Aranha-Piano.mp3 in Resources */,
+				8BD83097292D7D0200799DA9 /* AranhaSaxofone.mp3 in Resources */,
+				8BD83099292D7D0200799DA9 /* AranhaPandeiro.mp3 in Resources */,
+				8BD8309E292D7D0200799DA9 /* BarataSaxofone.mp3 in Resources */,
+				8BD83094292D7D0200799DA9 /* AranhaPiano.mp3 in Resources */,
 				8BD830A6292D7D2100799DA9 /* ViolaoCarta.mp3 in Resources */,
-				8BD83090292D7D0200799DA9 /* Borboleta-Pandeiro.mp3 in Resources */,
+				8BD83090292D7D0200799DA9 /* BorboletaPandeiro.mp3 in Resources */,
 				8BD83023292D795D00799DA9 /* Preview Assets.xcassets in Resources */,
-				8BD8309A292D7D0200799DA9 /* Barata-Pandeiro.mp3 in Resources */,
-				8BD83098292D7D0200799DA9 /* Aranha-Violao.mp3 in Resources */,
-				8BD8309F292D7D0200799DA9 /* Barata-Piano.mp3 in Resources */,
-				8BD83093292D7D0200799DA9 /* Borboleta-Chocalho.mp3 in Resources */,
+				8BD8309A292D7D0200799DA9 /* BarataPandeiro.mp3 in Resources */,
+				8BD83098292D7D0200799DA9 /* AranhaViolao.mp3 in Resources */,
+				8BD8309F292D7D0200799DA9 /* BarataPiano.mp3 in Resources */,
+				8BD83093292D7D0200799DA9 /* BorboletaChocalho.mp3 in Resources */,
 				8BD830A0292D7D2100799DA9 /* SaxofoneCarta.mp3 in Resources */,
 				8BD83020292D795D00799DA9 /* Assets.xcassets in Resources */,
-				8BD8309C292D7D0200799DA9 /* Barata-Chocalho.mp3 in Resources */,
+				8BD8309C292D7D0200799DA9 /* BarataChocalho.mp3 in Resources */,
 				8BD830A1292D7D2100799DA9 /* PianoCarta.mp3 in Resources */,
-				8BD8308F292D7D0200799DA9 /* Borboleta-Piano.mp3 in Resources */,
-				8BD83092292D7D0200799DA9 /* Borboleta-Violao.mp3 in Resources */,
-				8BD8309D292D7D0200799DA9 /* Barata-Violao.mp3 in Resources */,
+				8BD8308F292D7D0200799DA9 /* BorboletaPiano.mp3 in Resources */,
+				8BD83092292D7D0200799DA9 /* BorboletaViolao.mp3 in Resources */,
+				8BD8309D292D7D0200799DA9 /* BarataViolao.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,19 +743,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Orkhestra Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = YFB3KM7U74;
+				DEVELOPMENT_TEAM = FJ6C8YTY7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ruaneleu;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.OrkhestraApp;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ruaneleu.watch;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp.watchapp;
 				PRODUCT_NAME = orkhestra;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -772,19 +772,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Orkhestra Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = YFB3KM7U74;
+				DEVELOPMENT_TEAM = FJ6C8YTY7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ruaneleu;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.OrkhestraApp;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ruaneleu.watch;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp.watchapp;
 				PRODUCT_NAME = orkhestra;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -805,7 +805,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Orkhestra/Preview Content\"";
-				DEVELOPMENT_TEAM = YFB3KM7U74;
+				DEVELOPMENT_TEAM = FJ6C8YTY7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Orkhestra/Info.plist;
@@ -821,8 +821,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ruaneleu;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -843,7 +843,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Orkhestra/Preview Content\"";
-				DEVELOPMENT_TEAM = YFB3KM7U74;
+				DEVELOPMENT_TEAM = FJ6C8YTY7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Orkhestra/Info.plist;
@@ -859,8 +859,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ruaneleu;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OrkhestraApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
