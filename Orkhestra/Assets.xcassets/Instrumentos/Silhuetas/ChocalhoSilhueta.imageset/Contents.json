@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "SilhuetaChocalhoLightMode.svg",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "SilhuetaChocalhoDarkMode.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
